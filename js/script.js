@@ -84,22 +84,22 @@ function cargar_mapa() {
       });
 
       $('.editar-en-id').bind('click', function () {
-        var idstring = [
+        var osmeditstring = [
             map.getZoom(),
             map.getCenter().wrap().lat,
             map.getCenter().wrap().lng
         ].join('/');
-        $('#editar-en').html('<img class="pull-right" src="/img/iD.png" width="64" alt="iD"/><p>iD es un editor OpenStreetMap basado en JavaScript.</p><a class="btn btn-success" role="button" href="http://geowiki.com/iD/#map='+idstring+'" target="_blank">Editar zona en iD Editor</a>');
+        $('#editar-en').html('<img class="pull-right" src="/img/iD.png" width="64" alt="iD"/><p>iD es un editor OpenStreetMap basado en JavaScript.</p><a class="btn btn-success" role="button" href="http://www.openstreetmap.org/edit?editor=id#map='+osmeditstring+'" target="_blank">Editar zona en iD Editor</a>');
         $('#modal-editar').modal({show:true,backdrop:false});
       });
 
       $('.editar-en-potlatch').bind('click', function () {
-        var p2string = L.Util.getParamString({
-                lon: map.getCenter().wrap().lng,
-                lat: map.getCenter().wrap().lat,
-                zoom: map.getZoom()
-        });
-        $('#editar-en').html('<img class="pull-right" src="/img/P2.png" width="74" alt="P2"/><p>Potlatch 2 (o P2) es un editor OpenStreetMap basado en Flash.</p><a class="btn btn-success" role="button" href="http://open.mapquestapi.com/dataedit/index_flash.html'+p2string+'" target="_blank">Editar zona en Potlatch 2</a>');
+        var osmeditstring = [
+            map.getZoom(),
+            map.getCenter().wrap().lat,
+            map.getCenter().wrap().lng
+        ].join('/');
+        $('#editar-en').html('<img class="pull-right" src="/img/P2.png" width="74" alt="P2"/><p>Potlatch 2 (o P2) es un editor OpenStreetMap basado en Flash.</p><a class="btn btn-success" role="button" href="http://www.openstreetmap.org/edit?editor=potlatch2#map='+osmeditstring+'" target="_blank">Editar zona en Potlatch 2</a>');
         $('#modal-editar').modal({show:true,backdrop:false});
       });
       var buscar = function(){
