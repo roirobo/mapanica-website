@@ -44,8 +44,10 @@
           <div class="btn-group pull-right" style="margin:10px;">
             <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">Iniciativa <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#" class="modal-about"><i class="icon-list"></i> Descripción</a></li>
-              <li><a href="#" class="modal-projects"><i class="icon-list-alt"></i> Proyectos</a></li>
+              <li><a href="#" class="modal-about"><i class="icon-list"></i> Acerca de</a></li>
+              <li><a href="#" class="modal-projects"><i class="icon-list-alt"></i> Proyectos</a>
+              </li>
+              <li><a href="#" class="modal-refs"><i class="icon-heart"></i> Referencias</a></li>
               <li class="divider"></li>
               <li><a href="http://lists.openstreetmap.org/listinfo/talk-ni" target="_blank"><i class="icon-envelope"></i>&nbsp;Lista de correo</a></li>
               <li><a href="http://irc.lc/OFTC/osm-ni/invitado" target="_blank"><i class="icon-comment"></i> Chat (IRC)</a></li>
@@ -101,8 +103,33 @@
         <h3 id="myModalLabel">Acerca de OpenStreetMap Nicaragua</h3>
       </div>
       <div class="modal-body" id="about">
-        <p><a href="https://openstreetmap.org">OpenStreetMap</a> es un proyecto internacional con la meta de crear un mapa global libre. Por este motivo recolectamos información sobre calles, transporte público, rios, bosques, casa y mucho más.</p>
+        <p><a href="https://openstreetmap.org" target="_blank">OpenStreetMap</a> es un proyecto internacional con la meta de crear un mapa global libre. Por este motivo recolectamos información sobre calles, transporte público, rios, bosques, casa y mucho más.</p>
         <p>Miles de personas, colectivos, organizaciones e instituciones públicas así como privadas colaboran desde todo el mundo. En <strong>Nicaragua</strong> somos un grupo de personas interesadas en mapeo, tecnologías y con el simple deseo de mejorar nuestro entorno.</p>
+      </div>
+    </div>
+
+    <!-- REFERENCES -->
+    <div id="modal-refs" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Proyectos" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Referencias y agradecimientos</h3>
+      </div>
+      <div class="modal-body" id="refs">
+        <p>Para poder realizar este sitio hemos tomado una gran cantidad de resultados colaboración global:
+          <ul>
+            <li>Los datos de los mapas son el producto de miles de actores que agradecemos a los "Colaboradores de <a href="https://openstreetmap.org" target="_blank">OpenStreetMap</a>".</li>
+            <li>Los estilos de los mapas, renderizados obtuvimos según la capa selecionado de las fuentes siguientes:
+              <ul>
+                <li>Humanitarian - <a href="https://openstreetmap.fr" target="_blank">OpenStreetMap Francia</a></li>
+                <li>OSM - <a href="https://openstreetmap.org" target="_blank">OpenStreetMap.org</a></li>
+                <li>...</li>
+              </ul>
+            </li>
+            <li>Programas libres en los servidores, cómo (entre muchos que se nos estan olvidando) <a href="https://www.debian.org" target="_blank">Debian</a>, <a href="https://mapnick.org" target="_blank">Mapnik</a>, <a href="https://jekyllrb.com" target="_blank">Jekyll</a>, <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, <a href=",https://leafletjs.com/" target="_blank">Leaflet</a>, <a href="https://httpd.apache.org/" target="_blank">Apache</a>, <a href="https://www.ruby-lang.org" target="_blank">Ruby</a></li>
+            <li>Sitio web inspirado y modificado del sitio web de <a href="https://openstreetmap.org.ar" target="_blank">OpenStreetMap Argentina</a></li>
+            <li>Un esfuerzo de nuestra comunidad local nicaragüense.</li>
+          </ul>
+        </p>
       </div>
     </div>
 
@@ -128,7 +155,7 @@
         <div>
           <img src="img/arbolito.png" align="right" hspace="20" />
           <h4>Puntos de referencia</h4>
-          <p>Respondiendo la necesidad local de direcciones en Centroamerica, propusimos un <a href="http://wiki.openstreetmap.org/wiki/Key:reference_point">manjeo adecuado</a> en OpenStreetMap, y ahora estanmos marcando los puntos relevantes.</p>
+          <p>Respondiendo la necesidad local de direcciones en Centroamerica, propusimos un <a href="http://wiki.openstreetmap.org/wiki/Key:reference_point" target="_blank">manjeo adecuado</a> en OpenStreetMap, y ahora estanmos marcando los puntos relevantes.</p>
         </div>
       </div>
     </div>
@@ -142,7 +169,7 @@
       <div class="modal-body" id="garmin">
       <p>Mapa ruteable de todo Centroamerica y el Caribe, basado en datos generados a partir de OpenStreetMap, para dispositivos GPS Garmin. </p>
       <h4>Descarga:</h4>
-      <a href="http://mapas.alternativaslibres.es/download_es.php?file=gmapsupp_Central-America.zip" target="_blank">http://mapas.alternativaslibres.es/download_en.php?file=gmapsupp_Central-America.zip</a>
+      <a href="http://mapas.alternativaslibres.es/download_es.php?file=gmapsupp_Central-America.zip" target="_blank">alternativaslibres.es</a>
       <span class="label label-success">Actualización constante</span>
       </div>
     </div>

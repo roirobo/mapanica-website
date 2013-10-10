@@ -54,6 +54,12 @@ function cargar_mapa() {
 
       });
 
+      $('.modal-refs').bind('click',function(){
+
+            $('#modal-refs').modal({show:true,backdrop:true});
+
+      });
+
       $('#webirc').bind('click',function(){
             $('<div/>').modal({remote:'http://irc.lc/OFTC/osm-ni/invitadoweb'});
 
