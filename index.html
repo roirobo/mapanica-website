@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="es-NI">
+  <head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>mapanica.net  - OpenStreetMap Nicaragua</title>
+    <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+    <script src="js/control/Permalink.js"></script>
+    <script src="js/control/Permalink.Marker.js"></script>
+    <script src="js/control/Permalink.Layer.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+    <link rel="stylesheet" href="js/Leaflet.zoomslider/L.Control.Zoomslider.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+    <![endif]-->
+
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <style>.leaflet-top{top:70px;}
+    .leaflet-bottom{bottom:15px;}
+    .l10{left:10px;}
+    #resultados{}
+    </style>
+    <link rel="stylesheet" href="css/default.css" />
+</head>
+<body>
+    <!-- Begin page content -->
+
+    <div id="header">
+        <div class="navigation-bar">
+          <div class="btn-group pull-right" style="margin:10px;">
+            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">Colaborar <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://wiki.openstreetmap.org/wiki/WikiProject_Nicaragua" target="_blank"><i class="icon-edit"></i> Wiki</a></li>
+              <li><a href="http://lists.openstreetmap.org/listinfo/talk-ni" target="_blank"><i class="icon-list"></i>&nbsp;Lista de correo</a></li>
+              <li><a href="http://irc.lc/OFTC/osm-ni/invitado" target="_blank"><i class="icon-comment"></i> Chat (IRC)</a></li>
+              <li><a href="http://www.facebook.com/mapanica" target="_blank"><i class="icon-list"></i>&nbsp;Página en Facebook</a></li>
+              <li class="divider"></li>
+              <li><a href="#" class="editar-en-josm"><i class="icon-edit"></i> Editar en JOSM</a></li>
+              <li><a href="#" class="editar-en-potlatch"><i class="icon-edit"></i> Editar en potlatch 2</a></li>
+              <li><a href="#" class="editar-en-id"><i class="icon-edit"></i> Editar en iD</a></li>
+            </ul>
+          </div>
+          <div class="btn-group pull-right" style="margin:10px;">
+            <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">Proyecto <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="modal-acerca"><i class="icon-screenshot"></i> Descripción</a></li>
+
+              <!-- dropdown menu links -->
+            </ul>
+          </div>
+          <div class="btn-group pull-right" style="margin:10px;">
+            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Mapas <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://download.geofabrik.de/central-america.html" target="_blank"><i class="icon-download-alt"></i>&nbsp;Extracto de geofabrik</a></li>
+              <li><a href="#" class="modal-garmin"><i class="icon-screenshot"></i> Mapa Garmin</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-form">
+          <div class="input-append pull-right" id="buscador" style="margin:10px;">
+              <form class="form-inline"><input type="text" class="input-medium span2" name="addr" value="" id="addr" size="10" >
+              <button type="submit" class="btn" id="buscar">Buscar</button></form>
+          </div>
+        </div>
+        <div class="branding">
+          <img class="logo" src="img/osmnica_small.png" />
+          <h3>OpenStreetMap Nicaragua <span class="label label-inverse">Beta</span></h3></
+          <div>
+      </div>
+    </div>
+    <div id="map" style="z-index:1">
+    </div>
+
+    <div id="modal-resultados" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Resultados" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Resultados</h3>
+      </div>
+      <div class="modal-body" id="resultados">
+        <img src="/img/loading.gif" alt="Cargando">
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+      </div>
+    </div>
+
+    <div id="modal-acerca" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Acerca de..." aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Sobre OpenStreetMap Nicaragua</h3>
+      </div>
+      <div class="modal-body" id="acercade">
+        <p>Somos un grupo de personas interesadas en mapeo, tecnologías o con el simple deseo de mejorar nuestro entorno. Para eso usamos tecnologías libres y datos abiertos.</p>
+      </div>
+    </div>
+
+    <div id="modal-garmin" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Mapa ruteable para Garmin</h3>
+      </div>
+      <div class="modal-body" id="garmin">
+      <p>Mapa ruteable de todo Centroamerica y el Caribe, basado en datos generados a partir de OpenStreetMap, para dispositivos GPS Garmin. </p>
+      <h4>Descarga:</h4>
+      <a href="http://mapas.alternativaslibres.es/download_en.php?file=gmapsupp_Central-America.zip" target="_blank">http://mapas.alternativaslibres.es/download_en.php?file=gmapsupp_Central-America.zip</a>
+      <span class="label label-success">Actualización constante</span>
+      </div>
+    </div>
+
+    <div id="modal-editar" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Editar zona</h3>
+      </div>
+      <div class="modal-body" id="editar-en">
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="js/Leaflet.zoomslider/L.Control.Zoomslider.js" ></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mapa.js"></script>
+</body>
+</html>
+
