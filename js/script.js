@@ -6,18 +6,31 @@ function cargar_mapa() {
 
 
 	    var humanitarian = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-		    attribution: 'Datos © Colaboradores de OpenStreetMap'
+		    attribution: 'Teselas © <a href="http://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
 	    });
 	    var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		    attribution: '© Colaboradores de OpenStreetMap'
+		    attribution: '© Colaboradores de <a href="http://openstreetmap.org">OpenStreetMap</a>'
 	    });
+      var thunderforest = L.tileLayer('http://tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
+        attribution: 'Teselas © <a href="http://www.opencyclemap.org/">OpenCycleMap</a>, información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+      });
+      var stamen_watercolor = L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
+        attribution: 'Teselas © <a href="http://maps.stamen.com/">Stamen Design</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+      });
+      var stamen_boner = L.tileLayer('http://tile.stamen.com/boner/{z}/{x}/{y}.jpg', {
+        attribution: 'Teselas © <a href="http://maps.stamen.com/">Stamen Design</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+      });
+
 	    var ign = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		    attribution: '© Colaboradores de OpenStreetMap'
+		    attribution: '© Colaboradores de <a href="http://openstreetmap.org">OpenStreetMap</a>'
 	    });
 
       var baseLayers = {
           "Humanitarian": humanitarian,
-          "OSM.org": osm
+          "OpenSteetMap": osm,
+          "Hibrido": stamen_boner,
+          "Topográfico": thunderforest,
+          "Acuarela": stamen_watercolor
       };
 
       map = new L.map('map', {
