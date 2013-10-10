@@ -2,13 +2,21 @@ img {
   border: 0;
 }
 
+h1.title {
+  color: #99CCFF;
+  font-size: 33px;
+  margin: 0;
+}
+
 h3 {
   font-weight: bold;
-  font-size: 20px;
 }
 
 .branding h3 {
   color: #fff;
+  font-size: 14px;
+  margin: 0 0 5px 0;
+
 }
 
 .label-inverse {
@@ -47,7 +55,8 @@ h3 {
 .branding {
 }
 
-.branding h3 {
+.branding h3,
+.branding h1 {
   margin-left: 140px;
 }
 
