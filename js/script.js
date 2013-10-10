@@ -44,7 +44,7 @@ function cargar_mapa() {
       map = new L.map('map', {
           center: [12.385,-86.1],
           zoom: 9,
-          layers: [osm]
+          layers: [hot]
       });
 
       var layers = L.control.layers(baseLayers);
