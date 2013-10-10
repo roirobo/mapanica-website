@@ -42,9 +42,15 @@ function cargar_mapa() {
 
       });
 
-      $('.modal-proyectos').bind('click',function(){
+      $('.modal-projects').bind('click',function(){
 
-            $('#modal-proyectos').modal({show:true,backdrop:true});
+            $('#modal-projects').modal({show:true,backdrop:true});
+
+      });
+
+      $('.modal-events').bind('click',function(){
+
+            $('#modal-events').modal({show:true,backdrop:true});
 
       });
 
@@ -53,12 +59,12 @@ function cargar_mapa() {
 
       });
 
-      $('.modal-acerca').bind('click',function(){
+      $('.modal-about').bind('click',function(){
 
-            $('#modal-acerca').modal({show:true,backdrop:true});
-
+            $('#modal-about').modal({show:true,backdrop:true});
 
       });
+
       $('#buscar').bind('click',function(){
         $('#modal-resultados').modal({show:true,backdrop:false});
         var inp = document.getElementById("addr");

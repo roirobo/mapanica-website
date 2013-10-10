@@ -33,7 +33,7 @@
           <div class="btn-group pull-right" style="margin:10px;">
             <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#">Colaborar <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#" class="modal-eventos"><i class="icon-calendar"></i> Eventos</a></li>
+              <li><a href="#" class="modal-events"><i class="icon-calendar"></i> Eventos</a></li>
               <li><a href="http://wiki.openstreetmap.org/wiki/WikiProject_Nicaragua" target="_blank"><i class="icon-edit"></i> Wiki</a></li>
               <li class="divider"></li>
               <li><a href="#" class="editar-en-josm"><i class="icon-edit"></i> Editar en JOSM</a></li>
@@ -44,8 +44,8 @@
           <div class="btn-group pull-right" style="margin:10px;">
             <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">Iniciativa <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#" class="modal-acerca"><i class="icon-list"></i> Descripción</a></li>
-              <li><a href="#" class="modal-proyectos"><i class="icon-list-alt"></i> Proyectos</a></li>
+              <li><a href="#" class="modal-about"><i class="icon-list"></i> Descripción</a></li>
+              <li><a href="#" class="modal-projects"><i class="icon-list-alt"></i> Proyectos</a></li>
               <li class="divider"></li>
               <li><a href="http://lists.openstreetmap.org/listinfo/talk-ni" target="_blank"><i class="icon-envelope"></i>&nbsp;Lista de correo</a></li>
               <li><a href="http://irc.lc/OFTC/osm-ni/invitado" target="_blank"><i class="icon-comment"></i> Chat (IRC)</a></li>
@@ -80,6 +80,7 @@
     <div id="map" style="z-index:1">
     </div>
 
+    <!-- SEARCH RESULTS -->
     <div id="modal-resultados" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Resultados" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -93,24 +94,25 @@
       </div>
     </div>
 
-    <div id="modal-acerca" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Acerca de..." aria-hidden="true">
+    <!-- ABOUT OSM -NI -->
+    <div id="modal-about" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Acerca de..." aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Sobre OpenStreetMap Nicaragua</h3>
+        <h3 id="myModalLabel">Acerca de OpenStreetMap Nicaragua</h3>
       </div>
-      <div class="modal-body" id="acercade">
+      <div class="modal-body" id="about">
         <p><a href="https://openstreetmap.org">OpenStreetMap</a> es un proyecto internacional con la meta de crear un mapa global libre. Por este motivo recolectamos información sobre calles, transporte público, rios, bosques, casa y mucho más.</p>
         <p>Miles de personas, colectivos, organizaciones e instituciones públicas así como privadas colaboran desde todo el mundo. En <strong>Nicaragua</strong> somos un grupo de personas interesadas en mapeo, tecnologías y con el simple deseo de mejorar nuestro entorno.</p>
       </div>
     </div>
 
-    <!-- PROYECTOS -->
-    <div id="modal-proyectos" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Proyectos" aria-hidden="true">
+    <!-- PROJECTS -->
+    <div id="modal-projects" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Proyectos" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Proyectos de OpenStreetMap Nicaragua</h3>
       </div>
-      <div class="modal-body" id="proyectos">
+      <div class="modal-body" id="projects">
         <div>
           <img src="img/buses.png" align="right" hspace="20" />
           <h4>Rutas de transporte urbano</h4>
@@ -131,6 +133,7 @@
       </div>
     </div>
 
+    <!-- GARMIN MAPS -->
     <div id="modal-garmin" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -144,6 +147,18 @@
       </div>
     </div>
 
+   <!-- EVENTS -->
+    <div id="modal-events" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Eventos</h3>
+      </div>
+      <div class="modal-body" id="events">
+        <p>¡Lo sentimos! En este momento no hay eventos anunciados. Vuelva pronto para saber de más eventos o siganos en <a href="http://www.facebook.com/mapanica">Facebook</a>.</p>
+      </div>
+    </div>
+
+    <!-- EDIT OSM -->
     <div id="modal-editar" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
