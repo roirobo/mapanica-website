@@ -5,8 +5,10 @@ img {
 h3 {
   font-weight: bold;
   font-size: 20px;
-  color: #fff;
+}
 
+.branding h3 {
+  color: #fff;
 }
 
 .label-inverse {
