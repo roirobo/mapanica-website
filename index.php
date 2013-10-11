@@ -3,48 +3,6 @@ layout: default
 lang: es
 ---
 
-<div id="title">
-<h1>mapanica.net</h1>
-<h3>Grupo de OpenStreetMap Nicaragua</h3>
-</div>
-<p>Somos un grupo de personas interesadas en mapeo, tecnologías o con el simple deseo de mejorar nuestro entorno. Para eso usamos tecnologías libres y datos abiertos.</p>
-
-<h2>Próximos eventos</h2>
-<p>Sábado, 2013-09-28:
-  <strong>Fiesta de Mapeo - Rutas de Managua</strong><br />
-  10am, <a href="http://co-labora.net">co-labora</a> (Del busto Jośe Martí 30vrs arriba, Managua)<br />
-  (El evento no tiene costo, ni requisitos de conocimiento previo o tecnológico)
-</p>
-
-
-<h2>Puntos de encuentro</h2>
-<div class="links">
-  <a href="http://www.facebook.com/mapanica"><img valign="middle" hspace="15" vspace="10" src="images/facebook.png" alt="Facebook" name="Facebook" /></a> Página en Facebook.<br />
-  <a href="http://wiki.openstreetmap.org/wiki/WikiProject_Nicaragua"><img valign="middle" hspace="15" vspace="10" src="images/osm_logo_wiki.png" alt="Wiki de OpenStreetMap" name="Wiki de OpenStreetMap" /></a> Wiki de OpenStreetMap<br />
-  <a href="http://lists.openstreetmap.org/listinfo/talk-ni"><img valign="middle" hspace="15" vspace="10" src="images/email.png" alt="Lista de correo" name="Lista de correo" /></a> Lista de correo<br />
-</div>
-
-<h2>Proyectos actuales</h2>
-
-<div>
-  <img src="images/buses.png" align="right" hspace="20" />
-  <h4>Rutas de transporte urbano</h4>
-  <p>En nconjunto mapeamos el transporte urbano colectivo de Managua y creamos una aplicación web confortable</p>
-</div>
-<br />
-<div>
-  <img src="images/taller.png" align="right" hspace="20" />
-  <h4>Mercado Oriental</h4>
-  <p>Conocerdores del mercado y los que lo quieren ser, mapeamos el mercado mas grande de Centroamerica.</p>
-</div>
-<br />
-<div>
-  <img src="images/arbolito.png" align="right" hspace="20" />
-  <h4>Puntos de referencia</h4>
-  <p>Respondiendo la necesidad local de direcciones en Centroamerica, propusimos un <a href="http://wiki.openstreetmap.org/wiki/Key:reference_point">manjeo adecuado</a> en OpenStreetMap, y ahora estanmos marcando los puntos relevantes.</p>
-</div>
-
-
 <h2>Suscribirse</h2>
 <div class="subscription-form">
 <?php

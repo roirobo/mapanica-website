@@ -1,32 +1,45 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-NI">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
     <meta name="keywords" content="CpenStreetMap, Nicaragua, Mapas, Transporte público, Datos Abuertos, Open Data, Software Libre" />
     <meta name="description" content="Grupo de OpenStreetMap Nicaragua" />
     <meta name="Content-Language" content="es" />
     <meta name="ROBOTS" content="INDEX, FOLLOW" />
     <meta name="revisit-after" content="30 days" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
 
-    <title>mapanica.net {{ page.title }}</title>
-    <link href="css/default.css" rel="stylesheet" type="text/css" />
+    <title>mapanica.net  - OpenStreetMap Nicaragua</title>
+    <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+    <script src="js/control/Permalink.js"></script>
+    <script src="js/control/Permalink.Marker.js"></script>
+    <script src="js/control/Permalink.Layer.js"></script>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" type="text/css" />
+    <link rel="stylesheet" href="js/Leaflet.zoomslider/L.Control.Zoomslider.css" type="text/css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
+    <link rel="stylesheet" href="css/default.css" type="text/css" />
+
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script> -->
     <!--- <script src="js/jquery.backstretch.min.js"></script> -->
-    <!-- <script src="js/script.js"></script> -->
   </head>
 
   <body>
-    <iframe frameBorder='0' src='http://a.tiles.mapbox.com/v3/xamanu.map-1hknla49.html#16/12.1349/-86.2804'></iframe>
-    <div id="inner-body">
-      <div id="page-wrapper">
-        <div id="content">
 
-          {{ content }}
+    {{ content }}
 
-        </div><!-- /#content -->
-      </div><!-- /#page-wrapper -->
-    </div><!-- /#inner-body -->
+    <!-- Map -->
+    <script src="js/Leaflet.zoomslider/L.Control.Zoomslider.js" ></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- Piwik -->
     <script type="text/javascript">
