@@ -34,7 +34,7 @@ function cargar_mapa() {
       var baseLayers = {
           "Humanitarian": humanitarian,
           "OpenSteetMap": osm,
-          "Español (Mapbox)": mapbox,
+          "Terreno/Español": mapbox,
           "Hibrido": stamen_boner,
           "Transporte público": pub_transport,
           "Topográfico": thunderforest,
