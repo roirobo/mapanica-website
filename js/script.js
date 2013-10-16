@@ -23,7 +23,7 @@ function cargar_mapa() {
       var pub_transport = L.tileLayer('http://tile.memomaps.de/tilegen/{z}/{x}/{y}.png', {
         attribution: 'Teselas © <a href="http://memomaps.de/">MeMoMaps</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
       });
-      var mapbox = L.tileLayer('http://{s}.tiles.mapbox.com/v3/dennisl.map-dfbkqsr2/{z}/{x}/{y}.png', {
+      var mapbox = L.tileLayer('http://{switch:a,b,c}.tiles.mapbox.com/v3/jaakkoh.map-4ch3dsvl/{z}/{x}/{y}.png', {
         attribution: 'Teselas © <a href="http://mapbox.com/">Mapbox</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
       });
 
@@ -34,8 +34,8 @@ function cargar_mapa() {
       var baseLayers = {
           "Humanitarian": humanitarian,
           "OpenSteetMap": osm,
+          "Español (Mapbox)": mapbox,
           "Hibrido": stamen_boner,
-          "Mapbox": mapbox,
           "Transporte público": pub_transport,
           "Topográfico": thunderforest,
           "Acuarela": stamen_watercolor
