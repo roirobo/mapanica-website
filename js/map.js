@@ -28,7 +28,7 @@ function load_map() {
 
   var baseLayers = {
     "Humanitarian": humanitarian, // H
-    "OpenSteetMap": osm,  // O
+    "OpenStreetMap": osm,  // O
     "Terreno": mapbox, // M
     "Hibrido": stamen_boner,  // I
     "Transporte público": pub_transport, // T
