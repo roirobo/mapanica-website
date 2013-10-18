@@ -10,7 +10,7 @@ function load_map() {
 	var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	  attribution: '© Colaboradores de <a href="http://openstreetmap.org">OpenStreetMap</a>'
 	});http:
-  var thunderforest = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
+  var opencyclemap = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
     attribution: 'Teselas © <a href="http://www.opencyclemap.org/">OpenCycleMap</a>, información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
   });
   var stamen_watercolor = L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
@@ -27,13 +27,13 @@ function load_map() {
   });
 
   var baseLayers = {
-    "Humanitarian": humanitarian, // H
-    "OpenStreetMap": osm,  // O
-    "Terreno": mapbox, // M
-    "Hibrido": stamen_boner,  // I
-    "Transporte público": pub_transport, // T
-    "Topográfico": thunderforest,  // G
-    "Acuarela": stamen_watercolor  // A
+    "Humanitarian": humanitarian,
+    "OpenStreetMap": osm,
+    "Terreno": mapbox,
+    "Hibrido": stamen_boner,
+    "Transporte público": pub_transport,
+    "Topográfico": opencyclemap,
+    "Acuarela": stamen_watercolor
   };
 
   // Obtain parameters from url
