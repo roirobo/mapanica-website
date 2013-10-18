@@ -9,8 +9,8 @@ function load_map() {
 	});
 	var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	  attribution: '© Colaboradores de <a href="http://openstreetmap.org">OpenStreetMap</a>'
-	});
-  var thunderforest = L.tileLayer('http://tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
+	});http:
+  var thunderforest = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
     attribution: 'Teselas © <a href="http://www.opencyclemap.org/">OpenCycleMap</a>, información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
   });
   var stamen_watercolor = L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
