@@ -55,15 +55,14 @@ function load_map() {
   map.addControl(layers);
 
   // Permalink
-  map.addControl(new L.Control.Permalink({text: 'Compartir', layers: layers}));
-
+  //map.addControl(new L.Control.Permalink({text: 'Compartir', layers: layers}));
 
   // Marker
   if (!isNaN(url_paramas.mlat) && !isNaN(url_paramas.mlon)) {
 
     // Adding marker
     var marker = L.marker([url_paramas.mlat,url_paramas.mlon]).addTo(map);
-
+console.log("fo");
     // Popup
     if (typeof url_paramas.popup !== 'undefined') {
       if (url_paramas.popup.match(/^[^\\\/&]*$/)) {
