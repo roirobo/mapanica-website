@@ -16,6 +16,7 @@ L.Control.Permalink.include({
 	_set_marker: function(e) {
 		//console.info("Set marker", e);
 		var p = e.params;
+		console.log(p);
 		//if (!this.options.useMarker) return;
 		if (this._marker) return;
 		if (p.marker != 1) return;
