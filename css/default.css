@@ -46,6 +46,7 @@ h3 {
   border-color:#e5e5e5 #797c80 #797c80 #e5e5e5;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  border-radius: 5px;
   padding: 2px 10px;
 }
 
