@@ -29,7 +29,7 @@ function load_map() {
   var baseLayers = {
     "Humanitarian": humanitarian, // H
     "OpenSteetMap": osm,  // O
-    "Terreno/Español": mapbox, // M
+    "Terreno": mapbox, // M
     "Hibrido": stamen_boner,  // I
     "Transporte público": pub_transport, // T
     "Topográfico": thunderforest,  // G
@@ -40,28 +40,22 @@ function load_map() {
   var url_paramas = get_params();
   console.log(url_paramas);
 
-  // Initial base layer
-  if (typeof baseLayers[url_paramas.layers] !== 'undefined') {
-    var layer = baseLayers[url_paramas.layers];
-  }
-  else {
-    var layer = humanitarian;
-  }
-
   // Initialize map
   map = new L.map('map', {
     center: [12.385,-86.1],
     zoom: 9,
-    layers: [layer]
+    layers: baseLayers[url_paramas.layers] || humanitarian
   });
 
   // Adding hash for position in url
   var hash = new L.Hash(map);
 
   // Adding layer functionality
-  var layers = L.control.layers(baseLayers);
+  var layers = L.control.activeLayers(baseLayers);
   map.addControl(layers);
-  // map.addControl(new L.Control.Permalink({text: 'Permalink', layers: layers}));
+
+  // Permalink
+  map.addControl(new L.Control.Permalink({text: 'Compartir', layers: layers}));
 
 
   // Marker
@@ -78,6 +72,8 @@ function load_map() {
     }
   }
 
+  console.log(map);
+  console.log(layers.getActiveBaseLayer().name);
 
   // http://leafletjs.com/examples/quick-start.html
 }
