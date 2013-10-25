@@ -45,13 +45,15 @@ h1, h2, h3, h4, h5 {
   font-family: "Montserrat", Impact, sans-serif;
 }
 
-h1.title {
+.branding h1.title {
   color: #5bc0de;
-  font-size: 33px;
-  margin: 0;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-h1.title span.downlight {
+.branding h1.title span.downlight {
   color: #2f96b4;
 }
 
@@ -61,9 +63,10 @@ h3 {
 
 .branding h3 {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0 0 5px 0;
   margin-top: -10px;
+  padding: 0;
 }
 
 .label-inverse {
@@ -100,9 +103,6 @@ h3 {
   border: 1px solid green;
 }
 
-.branding {
-}
-
 .branding h3,
 .branding h1 {
   margin-left: 140px;
@@ -120,17 +120,30 @@ h3 {
   z-index:10;
 }
 
+
+#header .branding {
+  float: left;
+  margin-top:20px;
+}
+
+
 #header .navigation-bar {
   margin: 20px 0 0 0;
+  float: right;
 }
 
 
 #header .search-form {
-  margin: 20px 0 0 0;
+  margin: 20px 0 0 15px;
+  float: left;
 }
 
-.leaflet-control-container .leaflet-top {
+.leaflet-control-container .leaflet-top.leaflet-left {
   margin-top: 130px;
+}
+
+.leaflet-control-container .leaflet-top.leaflet-right {
+  margin-top: 100px;
 }
 
 .leaflet-bottom {
@@ -142,3 +155,8 @@ h3 {
 }
 
 #search-results {}
+
+
+#header .navigation-bar >div {
+  margin: 10px;
+}
