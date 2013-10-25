@@ -39,7 +39,7 @@
   }
   .leaflet-control-zoomslider-slider {
     background: none;
-    height: 50px !important;
+    height: 30px !important;
   }
   body .modal {
     margin: 0 10px !important;
@@ -99,7 +99,7 @@
   }
   .leaflet-control-zoomslider-slider {
     background: none;
-    height: 50px !important;
+    height: 30px !important;
   }
 
   body .modal {
