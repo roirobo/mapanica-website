@@ -27,13 +27,19 @@
   #header .navigation-bar >div {
     margin: 5px 2px !important;
   }
-  .leaflet-control-container .leaflet-top.leaflet-left,
+  .leaflet-control-container .leaflet-top.leaflet-left {
+    margin-top: 50px !important;
+  }
   .leaflet-control-container .leaflet-top.leaflet-right {
     margin-top: 30px !important;
   }
   .leaflet-control-attribution,
-  .leaflet-control-zoomslider {
+  .leaflet-control-zoomslider-slider-body {
     display: none;
+  }
+  .leaflet-control-zoomslider-slider {
+    background: none;
+    height: 50px !important;
   }
   body .modal {
     margin: 0 10px !important;
@@ -81,14 +87,21 @@
   #header .navigation-bar >div {
     margin: 2px 2px !important;
   }
-  .leaflet-control-container .leaflet-top.leaflet-left,
+  .leaflet-control-container .leaflet-top.leaflet-left {
+    margin-top: 50px !important;
+  }
   .leaflet-control-container .leaflet-top.leaflet-right {
     margin-top: 30px !important;
   }
   .leaflet-control-attribution,
-  .leaflet-control-zoomslider {
+  .leaflet-control-zoomslider-slider-body {
     display: none;
   }
+  .leaflet-control-zoomslider-slider {
+    background: none;
+    height: 50px !important;
+  }
+
   body .modal {
     margin: 0 20px !important;
   }
