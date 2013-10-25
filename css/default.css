@@ -160,3 +160,10 @@ h3 {
 #header .navigation-bar >div {
   margin: 10px;
 }
+
+body .modal {
+    width: auto;
+    overflow: auto;
+    margin: 30px;
+    left: 0;
+}

@@ -35,6 +35,9 @@
   .leaflet-control-zoomslider {
     display: none;
   }
+  body .modal {
+    margin: 0 10px !important;
+  }
 }
 
 
@@ -85,6 +88,9 @@
   .leaflet-control-attribution,
   .leaflet-control-zoomslider {
     display: none;
+  }
+  body .modal {
+    margin: 0 20px !important;
   }
 }
 
@@ -143,6 +149,9 @@
   .leaflet-control-container .leaflet-top.leaflet-right {
     margin-top: 50px !important;
   }
+  body .modal {
+    margin: 0 20px !important;
+  }
 }
 
 @media (min-width: 760px) and (max-width: 960px){
@@ -162,6 +171,9 @@
   #header .search-form button {
     height: 24px;
   }
+  body .modal {
+    margin: 20px 80px !important;
+  }
 }
 
 /* #### Desktops #### */
@@ -176,6 +188,9 @@
   #header .search-form button span {
     padding: 0;
     margin: 0;
+  }
+  body .modal {
+    margin: 20px 160px !important;
   }
 }
 
