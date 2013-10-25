@@ -9,7 +9,7 @@
     margin-top: 10px !important;
   }
   #header {
-    height: 40px;
+    height: 35px;
   }
   #header img.logo {
     margin-top: 5px;
@@ -29,7 +29,11 @@
   }
   .leaflet-control-container .leaflet-top.leaflet-left,
   .leaflet-control-container .leaflet-top.leaflet-right {
-    margin-top: 50px !important;
+    margin-top: 30px !important;
+  }
+  .leaflet-control-attribution,
+  .leaflet-control-zoomslider {
+    display: none;
   }
 }
 
@@ -56,7 +60,7 @@
   }
 
   #header {
-    height: 40px;
+    height: 35px;
   }
   #header img.logo {
     margin-top: 5px;
@@ -72,11 +76,15 @@
     margin-top: 0 !important;
   }
   #header .navigation-bar >div {
-    margin: 5px 2px !important;
+    margin: 2px 2px !important;
   }
   .leaflet-control-container .leaflet-top.leaflet-left,
   .leaflet-control-container .leaflet-top.leaflet-right {
-    margin-top: 50px !important;
+    margin-top: 30px !important;
+  }
+  .leaflet-control-attribution,
+  .leaflet-control-zoomslider {
+    display: none;
   }
 }
 
