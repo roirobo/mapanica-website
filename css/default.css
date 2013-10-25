@@ -162,8 +162,14 @@ h3 {
 }
 
 body .modal {
-    width: auto;
-    overflow: auto;
-    margin: 30px;
-    left: 0;
+  width: auto;
+  margin: 30px;
+  left: 0;
+  height: 100px;
+}
+
+
+body .modal-body {
+  overflow-y: auto !important;
+  display: block;
 }

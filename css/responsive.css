@@ -19,7 +19,7 @@
   #header h1 {
     font-size: 16px;
     margin-left: 56px;
-    float: left;
+    float: right;
   }
   #header .branding {
     margin-top: 0 !important;
@@ -73,7 +73,7 @@
   #header h1 {
     font-size: 16px;
     margin-left: 56px;
-    float: left;
+    float: right;
   }
   #header .branding {
     margin-top: 0 !important;
@@ -137,7 +137,7 @@
   #header h1 {
     font-size: 16px;
     margin-left: 56px;
-    float: left;
+    float: right;
   }
   #header .branding {
     margin-top: 0 !important;
