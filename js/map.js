@@ -62,7 +62,7 @@ function load_map() {
 
     // Adding marker
     var marker = L.marker([url_paramas.mlat,url_paramas.mlon]).addTo(map);
-console.log("fo");
+
     // Popup
     if (typeof url_paramas.popup !== 'undefined') {
       if (url_paramas.popup.match(/^[^\\\/&]*$/)) {

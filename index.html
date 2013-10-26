@@ -16,10 +16,14 @@ lang: es
 
         <!-- SEARCH FORM -->
         <div class="search-form">
-          <div class="input-append pull-right" id="buscador" style="margin:10px;">
-              <form class="form-inline"><input type="text" class="input-medium span2" name="addr" value="" id="addr" size="10" >
-              <button type="submit" class="btn" id="search"><span class="fa fa-search"></span></button></form>
-          </div>
+          <form class="form-inline">
+            <div class="input-group">
+              <input type="text" class="form-control" name="addr" value="" id="addr" size="10" >
+              <span class="input-group-btn">
+                <button type="submit" class="btn" id="search"><span class="fa fa-search"></span></button>
+              </span>
+            </div>
+          </form>
         </div>
 
         <div class="navigation-bar">
@@ -45,10 +49,10 @@ lang: es
           <div class="btn-group pull-right">
             <a class="btn btn-info dropdown-toggle nav-primary" data-toggle="dropdown" href="#"><span class="nav-title">Iniciativa</span>&nbsp;<i class="fa fa-group"></i></a>
             <ul class="dropdown-menu">
-              <li><a href="#" class="modal-about"><i class="fa fa-list"></i> Acerca de</a></li>
-              <li><a href="#" class="modal-projects"><i class="fa fa-list-alt"></i> Proyectos</a>
+              <li><a data-toggle="modal" href="#modal-about" class="modal-about"><i class="fa fa-list"></i> Acerca de</a></li>
+              <li><a data-toggle="modal" href="#modal-projects" class="modal-projects"><i class="fa fa-list-alt"></i> Proyectos</a>
               </li>
-              <li><a href="#" class="modal-refs"><i class="fa fa-heart"></i> Referencias</a></li>
+              <li><a data-toggle="modal" href="#modal-refs" class="modal-refs"><i class="fa fa-heart"></i> Referencias</a></li>
               <li class="divider"></li>
               <li><a href="http://lists.openstreetmap.org/listinfo/talk-ni" target="_blank"><i class="fa fa-envelope"></i>&nbsp;Lista de correo</a></li>
               <li><a href="http://irc.lc/OFTC/osm-ni/invitado" target="_blank"><i class="fa fa-comment"></i> Chat (IRC)</a></li>
@@ -68,7 +72,7 @@ lang: es
               <li><a href="http://umap.openstreetmap.fr/es" target="_blank"><i class="fa fa-wrench"></i>&nbsp;uMap (Mapas personalizados)</a></li>
               <li class="divider"></li>
               <li><a href="http://download.geofabrik.de/central-america.html" target="_blank"><i class="fa fa-download"></i>&nbsp;Descargar información geográfica (Geofabrik)</a></li>
-              <li><a href="#" class="modal-garmin"><i class="fa fa-dot-circle-o
+              <li><a data-toggle="modal" href="#modal-garmin" class="modal-garmin"><i class="fa fa-dot-circle-o
 "></i> Mapa Garmin (Sistema de navegación)</a></li>
             </ul>
           </div>
@@ -77,11 +81,11 @@ lang: es
     </div> <!-- /HEADER -->
 
     <!-- MAP -->
-    <div id="map" style="z-index:1">
+    <div id="map">
     </div>
 
     <!-- SEARCH RESULTS -->
-    <div id="modal-search-results" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Resultados" aria-hidden="true">
+    <div id="modal-search-results" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Resultados" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Resultados</h3>
@@ -95,7 +99,7 @@ lang: es
     </div>
 
     <!-- ABOUT OSM -NI -->
-    <div id="modal-about" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Acerca de..." aria-hidden="true">
+    <div id="modal-about" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Acerca de..." aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Acerca de OpenStreetMap Nicaragua</h3>
@@ -107,7 +111,7 @@ lang: es
     </div>
 
     <!-- REFERENCES -->
-    <div id="modal-refs" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Proyectos" aria-hidden="true">
+    <div id="modal-refs" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Proyectos" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Referencias y agradecimientos</h3>
@@ -132,7 +136,7 @@ lang: es
     </div>
 
     <!-- PROJECTS -->
-    <div id="modal-projects" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Proyectos" aria-hidden="true">
+    <div id="modal-projects" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Proyectos" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Proyectos de OpenStreetMap Nicaragua</h3>
@@ -159,7 +163,7 @@ lang: es
     </div>
 
     <!-- GARMIN MAPS -->
-    <div id="modal-garmin" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
+    <div id="modal-garmin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Mapa ruteable para Garmin</h3>
@@ -173,7 +177,7 @@ lang: es
     </div>
 
    <!-- EVENTS -->
-    <div id="modal-events" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
+    <div id="modal-events" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Eventos</h3>
@@ -184,7 +188,7 @@ lang: es
     </div>
 
     <!-- EDIT OSM -->
-    <div id="modal-editar" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
+    <div id="modal-editar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Mapa Garmin" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Editar zona</h3>

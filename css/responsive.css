@@ -3,10 +3,10 @@
   #header h3,
   #header .search-form,
   #header .navigation-bar {
-    display: none !important;
+    display: none;
   }
   #header .navigation-bar {
-    margin-top: 10px !important;
+    margin-top: 10px;
   }
   #header {
     height: 35px;
@@ -20,18 +20,19 @@
     font-size: 16px;
     margin-left: 56px;
     float: right;
+    margin-top: 8px;
   }
   #header .branding {
-    margin-top: 0 !important;
+    margin-top: 0;
   }
   #header .navigation-bar >div {
-    margin: 5px 2px !important;
+    margin: 5px 2px;
   }
   .leaflet-control-container .leaflet-top.leaflet-left {
-    margin-top: 50px !important;
+    margin-top: 50px;
   }
   .leaflet-control-container .leaflet-top.leaflet-right {
-    margin-top: 30px !important;
+    margin-top: 30px;
   }
   .leaflet-control-attribution,
   .leaflet-control-zoomslider-slider-body {
@@ -39,10 +40,10 @@
   }
   .leaflet-control-zoomslider-slider {
     background: none;
-    height: 30px !important;
+    height: 30px;
   }
   body .modal {
-    margin: 0 10px !important;
+    margin: 0 10px;
   }
 }
 
@@ -51,13 +52,13 @@
   #header h3,
   #header .search-form,
   #header .nav-title {
-    display: none !important;
+    display: none;
   }
   #header .navigation-bar {
-    margin-top: 10px !important;
+    margin-top: 10px;
   }
   #header .navigation-bar {
-    margin-top: 0 !important;
+    margin-top: 0;
   }
   #header .navigation-bar >a {
     width: 10px;
@@ -80,18 +81,19 @@
     font-size: 16px;
     margin-left: 56px;
     float: right;
+    margin-top: 8px;
   }
   #header .branding {
-    margin-top: 0 !important;
+    margin-top: 0;
   }
   #header .navigation-bar >div {
-    margin: 2px 2px !important;
+    margin: 2px 2px;
   }
   .leaflet-control-container .leaflet-top.leaflet-left {
-    margin-top: 50px !important;
+    margin-top: 50px;
   }
   .leaflet-control-container .leaflet-top.leaflet-right {
-    margin-top: 30px !important;
+    margin-top: 30px;
   }
   .leaflet-control-attribution,
   .leaflet-control-zoomslider-slider-body {
@@ -99,11 +101,13 @@
   }
   .leaflet-control-zoomslider-slider {
     background: none;
-    height: 30px !important;
+    height: 30px;
   }
-
+  .btn {
+    padding: 3px 7px;
+  }
   body .modal {
-    margin: 0 20px !important;
+    margin: 0 20px;
   }
 }
 
@@ -112,21 +116,26 @@
   #header h3,
   #header .nav-title,
   #header .search-button-title {
-    display: none !important;
+    display: none;
   }
   #header .navigation-bar {
-    margin-top: 10px !important;
+    margin-top: 10px;
+  }
+
+  #header .search-form {
+    margin-top: 8px;
+    margin-left: 30px;
+    width: 120px;
+
   }
   #header .search-form input {
-    padding: 0px 5px;
-    width: 90px;
+    height: 24px;
   }
   #header .search-form button {
-    height: 22px;
+    padding: 4px 10px;
   }
-  #header .navigation-bar,
-  #header .search-form {
-    margin-top: 0 !important;
+  #header .navigation-bar {
+    margin-top: 0;
   }
 
   #header .navigation-bar >a {
@@ -151,19 +160,23 @@
     font-size: 16px;
     margin-left: 56px;
     float: right;
+    margin-top: 10px;
   }
   #header .branding {
-    margin-top: 0 !important;
+    margin-top: 0;
   }
   #header .navigation-bar >div {
-    margin: 5px 2px !important;
+    margin: 5px 2px;
   }
   .leaflet-control-container .leaflet-top.leaflet-left,
   .leaflet-control-container .leaflet-top.leaflet-right {
-    margin-top: 50px !important;
+    margin-top: 50px;
+  }
+  .btn {
+    padding: 3px 7px;
   }
   body .modal {
-    margin: 0 20px !important;
+    margin: 0 20px;
   }
 }
 
@@ -172,38 +185,24 @@
     display: none;
   }
   #header .navigation-bar {
-    margin-top: 15px !important;
+    margin-top: 15px;
   }
   #header .search-form {
-    margin-left: 30px !important;
-  }
-  #header .search-form input {
-    padding: 1px 5px;
-    width: 90px;
-  }
-  #header .search-form button {
-    height: 24px;
+    margin-left: 30px;
+    width: 150px;
   }
   body .modal {
-    margin: 20px 80px !important;
+    margin: 20px 80px;
   }
 }
 
 /* #### Desktops #### */
 @media (min-width: 960px){
   #header .search-form {
-    margin-left: 30px !important;
-  }
-  #header .search-form button {
-    padding: 7px 10px;
-    margin: 0;
-  }
-  #header .search-form button span {
-    padding: 0;
-    margin: 0;
+    margin-left: 30px;
   }
   body .modal {
-    margin: 20px 160px !important;
+    margin: 20px 160px;
   }
 }
 
