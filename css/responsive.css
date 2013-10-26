@@ -145,6 +145,14 @@
     width: 120px;
 
   }
+  .leaflet-control-attribution,
+  .leaflet-control-zoomslider-slider-body {
+    display: none;
+  }
+  .leaflet-control-zoomslider-slider {
+    background: none;
+    height: 30px;
+  }
   #header .search-form input {
     height: 24px;
   }
