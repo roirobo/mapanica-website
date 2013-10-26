@@ -140,10 +140,9 @@
   }
 
   #header .search-form {
-    margin-top: 8px;
-    margin-left: 15px;
+    margin: 5px 5px 0 10px;
     width: 120px;
-
+    float: right;
   }
   .leaflet-control-attribution,
   .leaflet-control-zoomslider-slider-body {
