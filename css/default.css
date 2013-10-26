@@ -200,3 +200,15 @@ body .modal {
   display: block;
   z-index: 0;
 }
+
+#modal-mobile .fa-android {
+  color: #99cc00;
+  font-size: 2em;
+  margin-right:10px;
+}
+
+#modal-mobile .fa-apple {
+  color: #665F59;
+  font-size: 2em;
+  margin-right:10px;
+}
