@@ -4,18 +4,22 @@
 $(document).ready(function (){
   $('.modal-garmin').bind('click',function(){
     $('#modal-garmin').modal({show:true,backdrop:true});
+    $('#modal-garmin').css({width:'auto', height:'auto', 'max-height':'100%'});
   });
 
   $('.modal-projects').bind('click',function(){
     $('#modal-projects').modal({show:true,backdrop:true});
+    $('#modal-projects').css({width:'auto', height:'auto', 'max-height':'100%'});
   });
 
   $('.modal-events').bind('click',function(){
     $('#modal-events').modal({show:true,backdrop:true});
+    $('#modal-events').css({width:'auto', height:'auto', 'max-height':'100%'});
   });
 
   $('.modal-refs').bind('click',function(){
     $('#modal-refs').modal({show:true,backdrop:true});
+    $('#modal-refs').css({width:'auto', height:'auto', 'max-height':'100%'});
   });
 
   $('#webirc').bind('click',function(){
@@ -24,6 +28,7 @@ $(document).ready(function (){
 
   $('.modal-about').bind('click',function(){
     $('#modal-about').modal({show:true,backdrop:true});
+    $('#modal-about').css({width:'auto', height:'auto', 'max-height':'100%'});
   });
 
   $('.editar-en-josm').bind('click', function () {
@@ -36,6 +41,7 @@ $(document).ready(function (){
     });
     $('#editar-en').html('<img class="pull-right" src="/img/josm.png" width="64" alt="josm"/><p>Para utilizar el siguiente enlace, es necesario tener instalado y abierto el <a href="http://josm.openstreetmap.de" target="_blank">JOSM</a> con el </i><a href="http://josm.openstreetmap.de/wiki/Help/Preferences/RemoteControl" target="_blank">Remote Control</a></i> activado.</p><a class="btn btn-success" role="button" href="http://127.0.0.1:8111/load_and_zoom'+josmstring+'" target="_blank">Editar zona en JOSM</a>');
     $('#modal-editar').modal({show:true,backdrop:false});
+    $('#modal-editar').css({width:'auto', height:'auto', 'max-height':'100%'});
   });
 
   $('.editar-en-id').bind('click', function () {
@@ -46,6 +52,7 @@ $(document).ready(function (){
     ].join('/');
     $('#editar-en').html('<img class="pull-right" src="/img/iD.png" width="64" alt="iD"/><p>iD es un editor OpenStreetMap basado en JavaScript.</p><a class="btn btn-success" role="button" href="http://www.openstreetmap.org/edit?editor=id#map='+osmeditstring+'" target="_blank">Editar zona en iD Editor</a>');
     $('#modal-editar').modal({show:true,backdrop:false});
+    $('#modal-editar').css({width:'auto', height:'auto', 'max-height':'100%'});
   });
 
   $('.editar-en-potlatch').bind('click', function () {
@@ -56,11 +63,13 @@ $(document).ready(function (){
     ].join('/');
     $('#editar-en').html('<img class="pull-right" src="/img/P2.png" width="74" alt="P2"/><p>Potlatch 2 (o P2) es un editor OpenStreetMap basado en Flash.</p><a class="btn btn-success" role="button" href="http://www.openstreetmap.org/edit?editor=potlatch2#map='+osmeditstring+'" target="_blank">Editar zona en Potlatch 2</a>');
     $('#modal-editar').modal({show:true,backdrop:false});
+    $('#modal-editar').css({width:'auto', height:'auto', 'max-height':'100%'});
   });
 
   var search = function(){
     $('#search-results').html('<img src="/img/loading.gif" alt="Cargando"/>');
     $('#modal-search-results').modal({show:true});
+    $('#modal-search').css({width:'auto', height:'auto', 'max-height':'100%'});
     var inp = document.getElementById("addr");
     $.getJSON('http://nominatim.openstreetmap.org/search?format=json&limit=5&q=' + inp.value, function(data) {
     var items = [];
@@ -81,6 +90,7 @@ $(document).ready(function (){
   $('.form-inline').submit(function(e){return false;});
   $('#search').bind('click',function(){
     $('#modal-search-results').modal({show:true,backdrop:false});
+    $('#modal-search-results').css({width:'auto', height:'auto', 'max-height':'100%'});
     var inp = document.getElementById("addr");
     $.getJSON('http://nominatim.openstreetmap.org/search?format=json&limit=5&q=' + inp.value, function(data) {
       var items = [];

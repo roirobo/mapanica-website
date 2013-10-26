@@ -190,10 +190,9 @@ body .modal {
   width: auto;
   margin: 30px;
   left: 0;
-}
-
-.modal {
+  bottom: auto;
   overflow-y: auto !important;
+  position: absolute;
 }
 
 #map {
