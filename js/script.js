@@ -16,6 +16,10 @@ $(document).ready(function (){
     $('#modal-events').modal({show:true,backdrop:true});
     $('#modal-events').css({width:'auto', height:'auto', 'max-height':'100%'});
   });
+  $('.modal-mobile').bind('click',function(){
+    $('#modal-mobile').modal({show:true,backdrop:true});
+    $('#modal-mobile').css({width:'auto', height:'auto', 'max-height':'100%'});
+  });
 
   $('.modal-refs').bind('click',function(){
     $('#modal-refs').modal({show:true,backdrop:true});
