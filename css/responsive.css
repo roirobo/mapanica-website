@@ -47,6 +47,9 @@
     width: 30px;
     background-size: 20px 20px;
   }
+  .branding h1.title span.label {
+    font-size: 9px;
+  }
   body .modal {
     margin: 0 10px;
   }
@@ -116,6 +119,9 @@
   .btn {
     padding: 3px 7px;
   }
+  .branding h1.title span.label {
+    font-size: 9px;
+  }
   body .modal {
     margin: 0 20px;
   }
@@ -184,6 +190,9 @@
   }
   .btn {
     padding: 3px 7px;
+  }
+  .branding h1.title span.label {
+    font-size: 9px;
   }
   body .modal {
     margin: 0 20px;
