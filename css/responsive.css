@@ -1,5 +1,5 @@
 
-@media (max-width: 325px){
+@media (max-width: 319px){
   #header h3,
   #header .search-form,
   #header .navigation-bar {
@@ -17,7 +17,7 @@
     height:54px;
   }
   #header h1 {
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 56px;
     float: right;
     margin-top: 8px;
@@ -56,7 +56,7 @@
 }
 
 
-@media (min-width: 325px) and (max-width: 470px){
+@media (min-width: 320px) and (max-width: 449px){
   #header h3,
   #header .search-form,
   #header .nav-title {
@@ -91,7 +91,7 @@
     height:54px;
   }
   #header h1 {
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 56px;
     float: right;
     margin-top: 8px;
@@ -123,10 +123,13 @@
   .branding h1.title span.label {
     font-size: 9px;
   }
+  body .modal {
+    margin: 30px 10px;
+  }
 }
 
 
-@media (min-width: 470px) and (max-width: 760px) {
+@media (min-width: 450px) and (max-width: 759px) {
   #header h3,
   #header .nav-title,
   #header .search-button-title {
@@ -138,7 +141,7 @@
 
   #header .search-form {
     margin-top: 8px;
-    margin-left: 30px;
+    margin-left: 15px;
     width: 120px;
 
   }
@@ -171,18 +174,19 @@
   }
 
   #header {
-    height: 40px;
+    height: 35px;
   }
   #header img.logo {
     margin-top: 5px;
     width:54px;
     height:54px;
   }
+
   #header h1 {
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 56px;
     float: right;
-    margin-top: 10px;
+    margin-top: 8px;
   }
   #header .branding {
     margin-top: 0;
@@ -190,9 +194,16 @@
   #header .navigation-bar >div {
     margin: 5px 2px;
   }
-  .leaflet-control-container .leaflet-top.leaflet-left,
-  .leaflet-control-container .leaflet-top.leaflet-right {
+  .leaflet-control-container .leaflet-top.leaflet-left {
     margin-top: 50px;
+  }
+  .leaflet-control-container .leaflet-top.leaflet-right {
+    margin-top: 30px;
+  }
+  .leaflet-control-layers-toggle {
+    height: 30px;
+    width: 30px;
+    background-size: 20px 20px;
   }
   #header .btn {
     padding: 3px 7px 3px 3px;
@@ -203,7 +214,7 @@
   }
 }
 
-@media (min-width: 760px) and (max-width: 960px){
+@media (min-width: 759px) and (max-width: 959px){
   #header .nav-title {
     display: none;
   }
