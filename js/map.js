@@ -16,8 +16,8 @@ function load_map() {
   var stamen_watercolor = L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
     attribution: 'Teselas © <a href="http://maps.stamen.com/">Stamen Design</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
   });
-  var stamen_boner = L.tileLayer('http://tile.stamen.com/boner/{z}/{x}/{y}.jpg', {
-    attribution: 'Teselas © <a href="http://maps.stamen.com/">Stamen Design</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+  var mapbox_hybrid = L.tileLayer('http://{s}.tiles.mapbox.com/v3/jaakkoh.map-f5t6yxb5/{z}/{x}/{y}.png', {
+    attribution: 'Teselas © <a href="http://mapbox.com/">Mapbox</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
   });
   var pub_transport = L.tileLayer('http://tile.memomaps.de/tilegen/{z}/{x}/{y}.png', {
     attribution: 'Teselas © <a href="http://memomaps.de/">MeMoMaps</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
@@ -30,7 +30,7 @@ function load_map() {
     "Humanitarian": humanitarian,
     "OpenStreetMap": osm,
     "Terreno": mapbox,
-    "Hibrido": stamen_boner,
+    "Hibrido": mapbox_hybrid,
     "Transporte público": pub_transport,
     "Topográfico": opencyclemap,
     "Acuarela": stamen_watercolor
