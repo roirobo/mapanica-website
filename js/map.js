@@ -5,11 +5,11 @@ var feature;
 function load_map() {
 
   var humanitarian = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-		 attribution: 'Teselas © <a href="http://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
-	});
-	var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	  attribution: '© Colaboradores de <a href="http://openstreetmap.org">OpenStreetMap</a>'
-	});http:
+    attribution: 'Teselas © <a href="http://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+  });
+  var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© Colaboradores de <a href="http://openstreetmap.org">OpenStreetMap</a>'
+  });http:
   var opencyclemap = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
     attribution: 'Teselas © <a href="http://www.opencyclemap.org/">OpenCycleMap</a>, información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
   });
@@ -44,7 +44,7 @@ function load_map() {
   map = new L.map('map', {
     center: [12.385,-86.1],
     zoom: 9,
-    layers: baseLayers[url_paramas.layers] || humanitarian
+    layers: baseLayers[url_paramas.layers] || osm
   });
 
   // Adding hash for position in url
