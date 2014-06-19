@@ -42,8 +42,8 @@ function load_map() {
 
   // Initialize map
   map = new L.map('map', {
-    center: [12.385,-86.1],
-    zoom: 9,
+    center: [13,-85],
+    zoom: 8,
     layers: baseLayers[url_paramas.layers] || osm
   });
 
