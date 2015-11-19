@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
+  <meta name="author" content="OpenStreetMap Nicaragua" />
+  <meta name="description" content="Sitio web de la comunidad nacional de OpenStreetMap en Nicaragua" />
+  <meta name="keywords" content="CpenStreetMap, Nicaragua, Mapas, Transporte público, Datos Abuertos, Open Data, Software Libre" />
+  <meta name="Content-Language" content="es" />
+  <meta property="og:site_name" content="MapaNica.net - OpenStreetMap Nicaragua"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="MapaNica.net - OpenStreetMap Nicaragua"/>
+  <meta property="og:description" content="Sitio web de la comunidad nacional de OpenStreetMap en Nicaragua"/>
+  <meta property="og:locale" content="es_NI"/>
+  <meta property="og:url" content="http://localhost:8080"/>
+  <meta property="og:image" content="/images/mapanica.png">
+
+  <title>MapaNica.net - OpenStreetMap Nicaragua</title>
+
+  <script src="/theme/js/jquery.js"></script>
+  <script src="/theme/js/leaflet.js"></script>
+  <script src="/theme/js/script.js"></script>
+  <script src="/theme/js/leaflet/zoomslider/L.Control.Zoomslider.js" ></script>
+  <script src="/theme/js/leaflet/leaflet-hash.js"></script>
+  <script src="/theme/js/leaflet/ActiveLayers.js"></script>
+
+  <link rel="stylesheet" href="/theme/css/leaflet.css" type="text/css" />
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+  <![endif]-->
+  <link rel="stylesheet" href="/theme/js/leaflet/zoomslider/L.Control.Zoomslider.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="http://localhost:8080/theme/css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8080/theme/css/pygments.min.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8080/theme/css/font-awesome.min.css">
+
+  <link rel="stylesheet/less" type="text/css" href="http://localhost:8080/theme/css/style.less">
+  <script src="/theme/js/less.min.js" type="text/javascript"></script>
+
+  <link rel="shortcut icon" href="http://localhost:8080/theme/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="http://localhost:8080/theme/img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+
+      <!-- BRANDING -->
+      <div class="branding">
+        <img class="site-logo" src="/images/mapanica.png" />
+        <h1 class="site-title">mapanica<span>.net</span>
+        <h3 class="site-subtitle">OpenStreetMap Nicaragua</h3>
+      </div>
+  </header>  <aside>
+    <div id="sidebar-wrapper">
+
+    <nav>
+      <ul id="main-menu">
+          <li class="menu-item link-map"><a  href="/index.html"><span>Mapa de Nicaragua</span></a></li>
+          <li class="menu-item link-public-transport"><a class="active" href="/rutas-managua.html"><span>Rutas Managua</span></a></li>
+          <li class="menu-item link-mobile"><a  href="/mapas-moviles.html"><span>Mapas para móviles</span></a></li>
+          <li class="menu-item link-community"><a  href="/comunidad.html"><span>Comunidad</span></a></li>
+      </ul>
+    </nav>
+    <ul class="social">
+      <li><a class="sc-envelope-o" href="mailto:contacto@mapanica.net" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+      <li><a class="sc-facebook" href="http://www.facebook.com/mapanica" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a class="sc-twitter" href="http://www.twitter.com/osm_ni" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    </ul>
+    </div>
+  </aside>  <main id="map-wrapper">
+    <!-- MAP -->
+     <div id="map">
+     </div>
+  </main>
+  <!-- <footer></footer> -->
+
+  <script src="theme/js/public-transport.js"></script>
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.delattre.de/" : "http://stats.delattre.de/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 5);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://stats.delattre.de/piwik.php?idsite=5" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Blog",
+      "name": " MapaNica.net - OpenStreetMap Nicaragua ",
+      "url" : "http://localhost:8080",
+      "image": "/images/mapanica.png",
+      "description": "Sitio web de la comunidad nacional de OpenStreetMap en Nicaragua"
+    }
+  </script>
+</body>
+</html>
