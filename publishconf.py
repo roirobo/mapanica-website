@@ -12,6 +12,7 @@ from pelicanconf import *
 
 SITEURL = 'http://mapanica.net'
 RELATIVE_URLS = False
+USE_LESS = False
 
 DELETE_OUTPUT_DIRECTORY = True
 

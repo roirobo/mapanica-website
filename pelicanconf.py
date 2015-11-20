@@ -11,7 +11,7 @@ SITEDESCRIPTION = 'Sitio web de la comunidad nacional de OpenStreetMap en Nicara
 SITEKEYWORDS = 'CpenStreetMap, Nicaragua, Mapas, Transporte público, Datos Abuertos, Open Data, Software Libre'
 
 USE_LESS = True
-SITEURL = '/'
+SITEURL = 'http://localhost:8000'
 SITELOGO = '/images/mapanica.png'
 THEME = 'themes/zanate'
 

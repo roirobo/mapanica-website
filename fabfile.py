@@ -11,9 +11,10 @@ from pelican.server import ComplexHTTPRequestHandler
 # Local path configuration (can be absolute or relative to fabfile)
 env.deploy_path = 'output'
 DEPLOY_PATH = env.deploy_path
+theme_path = 'themes/zanate'
 
 # Remote server configuration
-production = 'dione'
+production = 'dione:54922'
 dest_path = '/var/www/sites/mapanica.net'
 
 # Port for `serve`
@@ -22,8 +23,10 @@ PORT = 8000
 def clean():
     """Remove generated files"""
     if os.path.isdir(DEPLOY_PATH):
-        shutil.rmtree(DEPLOY_PATH)
-        os.makedirs(DEPLOY_PATH)
+        # Don't remove folder because local web server get's affected
+        local('rm -rf ' + DEPLOY_PATH + '/*')
+        # shutil.rmtree(DEPLOY_PATH)
+        # os.makedirs(DEPLOY_PATH)
 
 def build():
     """Build local version of site"""
@@ -58,6 +61,7 @@ def reserve():
 @hosts(production)
 def publish():
     """Publish to production via rsync"""
+    local('lessc ' + theme_path + '/static/css/style.less -x > ' + theme_path + '/static/css/style.min.css')
     local('pelican -s publishconf.py')
     project.rsync_project(
         remote_dir=dest_path,
@@ -66,6 +70,7 @@ def publish():
         delete=True,
         extra_opts='-c',
     )
+    rebuild()
 
 
 def make_entry(title):
