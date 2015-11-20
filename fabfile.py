@@ -13,16 +13,8 @@ env.deploy_path = 'output'
 DEPLOY_PATH = env.deploy_path
 
 # Remote server configuration
-production = 'root@localhost:22'
-dest_path = '/var/www'
-
-# Rackspace Cloud Files configuration settings
-env.cloudfiles_username = 'my_rackspace_username'
-env.cloudfiles_api_key = 'my_rackspace_api_key'
-env.cloudfiles_container = 'my_cloudfiles_container'
-
-# Github Pages configuration
-env.github_pages_branch = "gh-pages"
+production = 'dione'
+dest_path = '/var/www/sites/mapanica.net'
 
 # Port for `serve`
 PORT = 8000
@@ -63,19 +55,6 @@ def reserve():
     build()
     serve()
 
-def preview():
-    """Build production version of site"""
-    local('pelican -s publishconf.py')
-
-def cf_upload():
-    """Publish to Rackspace Cloud Files"""
-    rebuild()
-    with lcd(DEPLOY_PATH):
-        local('swift -v -A https://auth.api.rackspacecloud.com/v1.0 '
-              '-U {cloudfiles_username} '
-              '-K {cloudfiles_api_key} '
-              'upload -c {cloudfiles_container} .'.format(**env))
-
 @hosts(production)
 def publish():
     """Publish to production via rsync"""
@@ -88,11 +67,6 @@ def publish():
         extra_opts='-c',
     )
 
-def gh_pages():
-    """Publish to GitHub Pages"""
-    rebuild()
-    local("ghp-import -b {github_pages_branch} {deploy_path}".format(**env))
-    local("git push origin {github_pages_branch}".format(**env))
 
 def make_entry(title):
     today = datetime.today()
@@ -112,15 +86,15 @@ def make_entry(title):
     print("File created -> " + f_create)
 
 
-def live_build(port=8080):
-    local('make clean')  # 1
-    local('make html')  # 2
-    os.chdir('output')  # 3
-    server = livereload.Server()  # 4
-    server.watch('../content/*.rst',  # 5
-        livereload.shell('pelican -s ../pelicanconf.py -o ../output'))  # 6
-    server.watch('../naffy/',  # 7
-        livereload.shell('pelican -s ../pelicanconf.py -o ../output'))  # 8
-    server.watch('*.html')  # 9
-    server.watch('*.css')  # 10
-    server.serve(liveport=35729, port=port)  # 11
+def serve_livereload():
+    local('make clean')
+    local('make html')
+    os.chdir('output')
+    server = livereload.Server()
+    server.watch('../content/*.rst',
+        livereload.shell('pelican -s ../pelicanconf.py -o ../output'))
+    server.watch('../naffy/',
+        livereload.shell('pelican -s ../pelicanconf.py -o ../output'))
+    server.watch('*.html')
+    server.watch('*.css')
+    server.serve(liveport=35729, port=PORT)

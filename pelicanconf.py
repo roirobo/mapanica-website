@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+
 from __future__ import unicode_literals
 
 AUTHOR = u'OpenStreetMap Nicaragua'
@@ -10,7 +11,7 @@ SITEDESCRIPTION = 'Sitio web de la comunidad nacional de OpenStreetMap en Nicara
 SITEKEYWORDS = 'CpenStreetMap, Nicaragua, Mapas, Transporte público, Datos Abuertos, Open Data, Software Libre'
 
 USE_LESS = True
-SITEURL = 'http://mapanica.net'
+SITEURL = '/'
 SITELOGO = '/images/mapanica.png'
 THEME = 'themes/zanate'
 
@@ -56,6 +57,3 @@ MENUITEMS = (('Mapa de Nicaragua', '/index.html', 'map'),
              ('Comunidad', '/comunidad.html', 'community'),)
 
 DEFAULT_PAGINATION = False
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
