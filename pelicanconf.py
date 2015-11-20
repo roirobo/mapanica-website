@@ -15,7 +15,7 @@ SITEURL = 'http://localhost:8000'
 SITELOGO = '/images/mapanica.png'
 THEME = 'themes/zanate'
 
-FAVICON = SITEURL + '/theme/img/favicon.ico'
+FAVICON = '/images/favicon.ico'
 ROBOTS = 'index, follow'
 
 PAGE_URL = '{slug}.html'

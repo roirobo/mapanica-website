@@ -1,4 +1,4 @@
-Title: La comunidad OpenStreetMap Nicaragua
+Title: La comunidad
 Date: 2015-12-01 00:00
 Modified: 2015-12-01 00:00
 Slug: comunidad

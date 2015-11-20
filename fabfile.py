@@ -30,7 +30,7 @@ def clean():
 
 def build():
     """Build local version of site"""
-    local('pelican -s pelicanconf.py')
+    local('make html')
 
 def rebuild():
     """`clean` then `build`"""
@@ -70,7 +70,6 @@ def publish():
         delete=True,
         extra_opts='-c',
     )
-    rebuild()
 
 
 def make_entry(title):
