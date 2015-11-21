@@ -73,11 +73,6 @@ function load_map() {
       }
     }
   }
-
-  console.log(map);
-  console.log(layers.getActiveBaseLayer().name);
-
-  // http://leafletjs.com/examples/quick-start.html
 }
 
 

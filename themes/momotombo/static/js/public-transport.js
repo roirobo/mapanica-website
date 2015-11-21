@@ -29,20 +29,15 @@ function load_map() {
   map = new L.map('map', {
     center: [12.125,-86.25],
     zoom: 13,
+    attributionControl: false,
     layers: baseLayers[url_paramas.layers] || pub_transport
   });
 
   // Adding hash for position in url
   var hash = new L.Hash(map);
 
-  // Adding layer functionality
-  var layers = L.control.activeLayers(baseLayers);
-  map.addControl(layers);
-
-  //var geojsonLayer = new L.GeoJSON.AJAX("");
-  //geojsonLayer.addTo(map);
-
-  // http://leafletjs.com/examples/quick-start.html
+  // Adding attribution to desired position
+  L.control.attribution({position: 'bottomleft'}).addTo(map);
 }
 
 function get_params(search) {
