@@ -11,7 +11,7 @@ from pelican.server import ComplexHTTPRequestHandler
 # Local path configuration (can be absolute or relative to fabfile)
 env.deploy_path = 'output'
 DEPLOY_PATH = env.deploy_path
-theme_path = 'themes/zanate'
+theme_path = 'themes/momotombo'
 
 # Remote server configuration
 production = 'dione:54922'

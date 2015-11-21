@@ -13,7 +13,7 @@ SITEKEYWORDS = 'CpenStreetMap, Nicaragua, Mapas, Transporte público, Datos Abue
 USE_LESS = True
 SITEURL = 'http://localhost:8000'
 SITELOGO = '/images/mapanica.png'
-THEME = 'themes/zanate'
+THEME = 'themes/momotombo'
 
 FAVICON = '/images/favicon.ico'
 ROBOTS = 'index, follow'

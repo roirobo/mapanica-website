@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block meta_javascript %}
+  <script src="/theme/js/leaflet.js"></script>
+  <script src="/theme/js/leaflet/leaflet-hash.js"></script>
+{% endblock %}
+
+{% block meta_css %}
+  <link rel="stylesheet" href="/theme/css/leaflet.css" type="text/css" />
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/embedd.css">
+{% endblock %}
+
+{% block content %}
+  <div id="map">
+    <div id="mapanica-logo">
+      <a href="http://www.mapanica.net" alt="Mapa de mapanica.net" target="_blank">
+        <img src="/images/mapanica.png" height="42" width="42" alt="Logotipo de OpenStreetMap Nicaragua"/><br />
+        <span>MapaNica</span>
+      </a>
+    </div>
+  </div>
+  <!-- <footer></footer> -->
+{% endblock %}
+{% block additional_js %}
+  <!-- Map -->
+  <script src="theme/js/map.js"></script>
+  {% include "partial/jsonld.html" %}
+{% endblock %}

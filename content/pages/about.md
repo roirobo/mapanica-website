@@ -19,8 +19,8 @@ Summary: MapaNica, el capítulo de [OpenStreetMap](http://openstreetmap.org/) en
 <div class="article-style-line">
 
 <h4>Videos de algunas de nuestras actividades</h4>
-<iframe width="400" height="225" src="//www.youtube.com/embed/TL2TzuTAlJQ" frameborder="0" allowfullscreen></iframe>
-<iframe width="400" height="225" src="//www.youtube.com/embed/aohEXf0tUuk" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="400" height="225" src="//www.youtube.com/embed/TL2TzuTAlJQ" frameborder="0" allowfullscreen></iframe></div>
+<div class="video-wrapper"><iframe width="400" height="225" src="//www.youtube.com/embed/aohEXf0tUuk" frameborder="0" allowfullscreen></iframe></div>
 </div>
 
 <div class="article-style-line">
