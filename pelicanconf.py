@@ -7,7 +7,7 @@ AUTHOR = u'OpenStreetMap Nicaragua'
 SITENAME = u'MapaNica.net - OpenStreetMap Nicaragua'
 SITETITLE = u'MapaNica.net'
 SITESUBTITLE = 'OpenStreetMap Nicaragua'
-SITEDESCRIPTION = 'Sitio web de la comunidad nacional de OpenStreetMap en Nicaragua'
+SITEDESCRIPTION = 'El mejor mapa de Nicaragua - libre y colaborativo'
 SITEKEYWORDS = 'CpenStreetMap, Nicaragua, Mapas, Transporte público, Datos Abuertos, Open Data, Software Libre'
 
 USE_LESS = True

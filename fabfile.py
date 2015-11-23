@@ -63,6 +63,7 @@ def publish():
     """Publish to production via rsync"""
     local('lessc ' + theme_path + '/static/css/style.less -x > ' + theme_path + '/static/css/style.min.css')
     local('pelican -s publishconf.py')
+    local('cp -r extra/* '+ DEPLOY_PATH + '/')
     project.rsync_project(
         remote_dir=dest_path,
         exclude=".DS_Store",

@@ -1,6 +1,5 @@
 
-function load_map() {
-
+function load_map(url_params) {
 
   var humanitarian = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
     attribution: 'Teselas © <a href="http://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
@@ -16,21 +15,18 @@ function load_map() {
   });
 
   var baseLayers = {
-    "Mapbox": mapbox,
+    "Transporte público": pub_transport,
     "Humanitarian": humanitarian,
     "OpenStreetMap": osm,
-    "Transporte público": pub_transport,
+    "Mapbox": mapbox,
   };
-
-  // Obtain parameters from url
-  var url_paramas = get_params();
 
   // Initialize map
   map = new L.map('map', {
     center: [12.125,-86.25],
     zoom: 13,
     attributionControl: false,
-    layers: baseLayers[url_paramas.layers] || pub_transport
+    layers: baseLayers[url_params.layers] || pub_transport
   });
 
   // Adding hash for position in url
@@ -38,6 +34,11 @@ function load_map() {
 
   // Adding attribution to desired position
   L.control.attribution({position: 'bottomleft'}).addTo(map);
+
+  // Adding layer functionality
+  var layers = L.control.activeLayers(baseLayers);
+  layers.setPosition('bottomleft').addTo(map);
+
 }
 
 function get_params(search) {
@@ -52,74 +53,146 @@ function get_params(search) {
     val = pair.slice(++j);
     params[key] = decodeURIComponent(val);
   }
-
   return params;
 }
 
+// Add / Update a key-value pair in the URL query parameters
+function updateUrlParameter(uri, key, value) {
+    // remove the hash part before operating on the uri
+    var i = uri.indexOf('#');
+    var hash = i === -1 ? ''  : uri.substr(i);
+         uri = i === -1 ? uri : uri.substr(0, i);
 
-
-$(document).ready(function() {
-
-  load_map();
-  var busDetailLayerGroup = new L.LayerGroup();
-  busDetailLayerGroup.addTo(map);
-
-  $(".bus-line-link").click (function() {
-
-    // Mark link as active
-    $('a.active').removeClass('active');
-    $(this).addClass('active');
-
-    // Clear old bus line
-    busDetailLayerGroup.clearLayers();
-    $("#messages").removeClass('visible');
-
-    var myStyle = {
-      "color": "#ff7800",
+    var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+    var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+    if (uri.match(re)) {
+        uri = uri.replace(re, '$1' + key + "=" + value + '$2');
+    } else {
+        uri = uri + separator + key + "=" + value;
     }
+    return uri + hash;  // finally append the hash as well
+}
 
-    // Load data second file
-    $.ajax({
-      type: "POST",
-      url: "/theme/data/" + this.text + "-2.geojson",
-      dataType: 'json',
-      success: function (response) {
+function loadBusRoute(busDetailLayerGroup, bus_number, category) {
+
+  // Clear old bus line
+  busDetailLayerGroup.clearLayers();
+
+  // Define colors for transport categories
+  var transportCategories = {
+    'lines-principal': '#00ff00',
+    'lines-central': '#c69c6d',
+    'lines-eastern': '#BB5BDE',
+    'lines-western': '#00ffff',
+    'lines-northern': '#f15a24',
+    'lines-southern': '#0000ff',
+
+  }
+  var myStyle = {
+    color: transportCategories[category],
+
+  }
+
+  var geojsonMarkerOptions = {
+    radius: 6,
+    fillColor: "#fff",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 1,
+    riseOnHover: true,
+  };
+
+  // Load data from file
+  $.ajax({
+    type: "GET",
+    url: "./data/" + bus_number + "-1.geojson",
+    dataType: 'json',
+    async: true,
+    cache: true,
+    success: function (response) {
         // Define content of popup
         geojsonLayer = L.geoJson(response, {
           style: myStyle,
-          onEachFeature: function (feature, layer) {
-            layer.bindPopup(feature.properties.name);
+          pointToLayer: function (feature, latlng) {
+            marker = L.circleMarker(latlng, geojsonMarkerOptions);
+            return marker;
           },
-        });
-        console.log(geojsonLayer);
+          onEachFeature: function (feature, layer) {
+            if (feature.geometry.type == 'Point') {
+              layer.bindLabel(feature.properties.name, {noHide: false});
+            }
+            //layer.bindPopup(feature.properties.name);
+        }});
         busDetailLayerGroup.addLayer(geojsonLayer);
-      },
-      error: function(jqXHR, textStatus, errorThrown) {
-        if (!$("#messages").hasClass("opened") ) {
-          $("#messages").addClass('visible');
-          $('#messages').text("Falta información sobre segunda dirección de esta ruta.");
-        }
-      }
-    });
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      console.log(textStatus + " (1): " + errorThrown);
+   }
+  });
 
-    // Load data from file
-    $.ajax({
-      type: "POST",
-      url: "./data/" + this.text + "-1.geojson",
-      dataType: 'json',
-      success: function (response) {
-          // Define content of popup
-          geojsonLayer = L.geoJson(response, {
-            onEachFeature: function (feature, layer) {
-              layer.bindPopup(feature.properties.name);
-          }});
-          busDetailLayerGroup.addLayer(geojsonLayer);
-      },
-      error: function(jqXHR, textStatus, errorThrown) {
-        $("#messages").addClass('visible');
-        $('#messages').text("Niguna información sobre está ruta se ha encontrado.");
-     }
-    });
+      // Load data from file
+  $.ajax({
+    type: "GET",
+    url: "./data/" + bus_number + "-2.geojson",
+    dataType: 'json',
+    async: true,
+    cache: true,
+    success: function (response) {
+        // Define content of popup
+        geojsonLayer = L.geoJson(response, {
+          style: myStyle,
+          pointToLayer: function (feature, latlng) {
+            marker = L.circleMarker(latlng, geojsonMarkerOptions);
+            return marker;
+          },
+          onEachFeature: function (feature, layer) {
+            if (feature.geometry.type == 'Point') {
+              layer.bindLabel(feature.properties.name, {noHide: false});
+            }
+            //layer.bindPopup(feature.properties.name);
+        }});
+        busDetailLayerGroup.addLayer(geojsonLayer);
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      console.log(textStatus + " (2): " + errorThrown);
+    }
+  });
+}
 
+$(document).ready(function() {
+
+  // Obtain parameters from url
+  var url_params = get_params();
+
+  load_map(url_params);
+
+  var busDetailLayerGroup = new L.LayerGroup();
+  busDetailLayerGroup.addTo(map);
+  if (typeof url_params.ruta !== 'undefined') {
+    bus_number = url_params.ruta;
+    category = $(this).find(".ruta-" + url_params.ruta).parent().attr("class");
+    loadBusRoute(busDetailLayerGroup, bus_number, category);
+  }
+
+
+  $(".bus-line-link").click (function(e) {
+
+    // Do not reload page
+    e.preventDefault();
+    console.log(e);
+
+    // Mark link as active
+    $('a.bus-active').removeClass('bus-active');
+    $(this).addClass('bus-active');
+
+
+     // Update uri query parameters
+    if (history.pushState) {
+      uri = updateUrlParameter(window.location.href, 'ruta', this.text);
+      window.history.pushState({path:uri},'',uri);
+    }
+    console.log(this);
+    loadBusRoute(busDetailLayerGroup, this.text, $(this).parent().attr("class"));
   });
 });
