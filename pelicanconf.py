@@ -18,14 +18,14 @@ THEME = 'themes/momotombo'
 FAVICON = '/images/favicon.ico'
 ROBOTS = 'index, follow'
 
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = '{slug}.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
 
 AUTHOR_SAVE_AS = False
 CATEGORY_SAVE_AS = False
 TAG_SAVE_AS = False
 ARCHIVES_SAVE_AS = False
-DIRECT_TEMPLATES = ('index', 'embedd', 'rutas-managua')
+DIRECT_TEMPLATES = ('index', 'embedd')
 
 CC_LICENSE = { 'name': 'Creative Commons Attribution-ShareAlike', 'version':'4.0', 'slug': 'by-sa' }
 
@@ -52,8 +52,8 @@ SOCIAL = (('envelope-o', 'mailto:contacto@mapanica.net'),
           )
 
 MENUITEMS = (('Mapa de Nicaragua', '/index.html', 'map'),
-             ('Rutas Managua', '/rutas-managua.html', 'public-transport'),
-             ('Mapas para móviles', '/mapas-moviles.html', 'mobile'),
-             ('Comunidad', '/comunidad.html', 'community'),)
+             ('Rutas Managua', 'http://rutas.mapanica.net', 'public-transport'),
+             ('Mapas para móviles', '/mapas-moviles', 'mobile'),
+             ('Comunidad', '/comunidad', 'community'),)
 
 DEFAULT_PAGINATION = False
