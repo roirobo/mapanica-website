@@ -11,9 +11,9 @@ Summary: MapaNica, el capítulo de [OpenStreetMap](http://openstreetmap.org/) en
 <div></div>
 
 <div>
-<p>MapaNica, el capítulo de <a href="http://openstreetmap.org" />OpenStreetMap</a> en Nicaragua, es una comunidad de <strong>entusiastas de la información geográfica</strong> optando por el uso de <strong>nuevas tecnologías libres</strong>. Es un grupo muy diverso, al cual pertenecen cartógrafos profesionales, empresas, organizaciones sin fines de lucro, programadores, estudiantes de varias carreras y otros ciudadanos quienes se apoderan de las <strong>herramientas participativas para contribuir</strong> a la recolección de información geográfica.<p>
+<p>MapaNica, el capítulo de <a href="http://openstreetmap.org"  target="_blank">OpenStreetMap</a> en Nicaragua, es una comunidad de <strong>entusiastas de la información geográfica</strong> optando por el uso de <strong>nuevas tecnologías libres</strong>. Es un grupo muy diverso, al cual pertenecen cartógrafos profesionales, empresas, organizaciones sin fines de lucro, programadores, estudiantes de varias carreras y otros ciudadanos quienes se apoderan de las <strong>herramientas participativas para contribuir</strong> a la recolección de información geográfica.<p>
 
-<p>La comunidad de MapaNica pretende crear y distribuir sin restricciones el mejor mapa de Nicaragua de manera colaborativa y libre.</p>
+<p>La comunidad de MapaNica pretende crear y <a href="http://openstreetmap.org" target="_blank">distribuir sin restricciones</a> el mejor mapa de Nicaragua de manera colaborativa y libre.</p>
 </div>
 
 <div class="article-style-line">

@@ -18,8 +18,8 @@ THEME = 'themes/momotombo'
 FAVICON = '/images/favicon.ico'
 ROBOTS = 'index, follow'
 
-PAGE_URL = '{slug}/'
-PAGE_SAVE_AS = '{slug}/index.html'
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
 
 AUTHOR_SAVE_AS = False
 CATEGORY_SAVE_AS = False
@@ -53,7 +53,7 @@ SOCIAL = (('envelope-o', 'mailto:contacto@mapanica.net'),
 
 MENUITEMS = (('Mapa de Nicaragua', '/index.html', 'map'),
              ('Rutas Managua', 'http://rutas.mapanica.net', 'public-transport'),
-             ('Mapas para móviles', '/mapas-moviles', 'mobile'),
-             ('Comunidad', '/comunidad', 'community'),)
+             ('Mapas para móviles', '/mapas-moviles.html', 'mobile'),
+             ('Comunidad', '/comunidad.html', 'community'),)
 
 DEFAULT_PAGINATION = False
