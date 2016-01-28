@@ -7,7 +7,7 @@ Summary: MapaNica, el capítulo de [OpenStreetMap](http://openstreetmap.org/) en
 <div class="article-style-line">
   <ul>
     <li>27/01/2016, Ésta Noche (Canal 2), <a href="https://www.youtube.com/watch?v=SloZBLw2SBI">MapaNica.net: un mapa digital de las rutas de buses de Managua</a> (Video), Español</li>
-    <li>28/01/2016, OpenCage Data Blog, <a href="http://blog.opencagedata.com/post/138167564723/country-profile-openstreetmap-in-nicaragua">Country Profile - OpenStreetMap in Nicaragua</a>, English</li>
+    <li>27/01/2016, OpenCage Data Blog, <a href="http://blog.opencagedata.com/post/138167564723/country-profile-openstreetmap-in-nicaragua">Country Profile - OpenStreetMap in Nicaragua</a>, English</li>
     <li>19/01/2016, Metro Nicaragua, <a href="http://issuu.com/metro_nicaragua/docs/20160119_ni_metronicaragua?e=0/32879038">Así podés tener tu mapa de las rutas de Managua</a> (página 15), Español</li>
     <li>07/01/2016, Humanitarian OpenStreetMap Team, <a href="https://hotosm.org/updates/2016-01-07_a_crowd_sourced_public_transportation_map_for_managua">A crowd-sourced public transportation map for Managua</a>, English</li>
     <li>14/12/2015, El Nuevo Diario, <a href="http://www.elnuevodiario.com.ni/suplementos/tecnologia/379601-queremos-tener-mejor-mapa-nicaragua/">“Queremos tener el mejor mapa de Nicaragua”</a>, Español</li>
