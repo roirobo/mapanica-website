@@ -21,7 +21,6 @@
 
 {% block content %}
   {% include "partial/header.html" %}
-  {% include "partial/sidebar.html" %}
   <main>
     <article>
       <h1 id="{{ page.slug }}">{{ page.title }}</h1>
@@ -29,6 +28,8 @@
         {{ page.content }}
       </div>
     </article>
+    {% include "partial/social-links.html" %}
+
   </main>
 {% endblock %}
 

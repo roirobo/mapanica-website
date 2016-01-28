@@ -54,6 +54,9 @@ SOCIAL = (('envelope-o', 'mailto:contacto@mapanica.net'),
 MENUITEMS = (('Mapa de Nicaragua', '/index.html', 'map'),
              ('Rutas Managua', 'http://rutas.mapanica.net', 'public-transport'),
              ('Mapas para móviles', '/mapas-moviles.html', 'mobile'),
-             ('Comunidad', '/comunidad.html', 'community'),)
+             ('Comunidad', '/comunidad.html', 'community'), 
+             ('Descargar datos', 'http://datos.mapanica.net', 'datos'),
+            )
+
 
 DEFAULT_PAGINATION = False

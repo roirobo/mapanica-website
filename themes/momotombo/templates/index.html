@@ -28,16 +28,17 @@
 {% endblock %}
 
 {% block content %}
-  {% include "partial/header-with-search.html" %}
-  {% include "partial/sidebar.html" %}
+  {% include "partial/header.html" %}
   <main id="map-wrapper">
     <!-- MAP -->
      <div id="map">
      </div>
-  </main>
-  <!-- <footer></footer> -->
-{% endblock %}
 
+     {% include "partial/social-links.html" %}
+
+  </main>
+
+{% endblock %}
 
 
 {% block additional_js %}

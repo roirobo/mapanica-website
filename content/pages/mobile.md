@@ -38,19 +38,3 @@ Summary: Mapas para dispositivos móviles
   </div>
   <div style="clear:both"></div>
 </div>
-
-<div class="article-style-line">
-  <h4>Garmin Nüvi</h4>
-
-  <div>
-    <img class="float-left" src="/images/garmin.png" />
-    <ul style="list-style-type:none;">
-      <li>Dispositivos dedicados de sístema de navegación</li>
-      <li>Mapa offline (no se necesita conexión a internet)</li>
-      <li>Busca todo lo que necesites en los mapas</li>
-      <li>Cómo llegar (entrutamiento)</li>
-    </ul>
-    <a href="http://mapas.alternativaslibres.es/download_es.php?file=gmapsupp_Central-America.zip" title="Garmin data in alternativaslibres.es">Mapa ruteable de todo Centroamerica y el Caribe</a>
-  </div>
-  <div style="clear:both"></div>
-</div>
