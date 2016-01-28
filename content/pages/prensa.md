@@ -20,6 +20,7 @@ Summary: MapaNica, el capítulo de [OpenStreetMap](http://openstreetmap.org/) en
     <li>10/06/2015, UNICEF Nicaragua, <a href="http://www.unicef.org.ni/prensa/302/">Quiero cambiar el mundo</a>, Español</li>
     <li>09/04/2015, Felix Delattre (Blog), <a href="http://felix.delattre.de/weblog/2015/04/09/bluefieldsmapping/">Collaborative maps for social progress and education in Nicaragua</a>, English</li>
     <li>01/04/2015, Milenio, <a href="http://www.milenio.com/tendencias/Unicef_mapa_digital_ninos-mapeo_ninos_Nicaragua-unicef_mapeo_jovenes_0_491950966.html">Unicef elogia mapa digital elaborado por niños de Nicaragua</a>, Español</li>
+    <li>27/03/2015, La Voz del Sandinismo, <a href="http://www.lavozdelsandinismo.com/nicaragua/2015-03-27/aportara-mapa-de-bluefields-datos-de-interes-a-comunidades/">Aportacrá mapa de Bluefields datos de interés a comunidades</a>, Español</li>
     <li>26/03/2015, La Prensa, <a href="http://www.laprensa.com.ni/2015/03/26/departamentales/1805769-bluefields-ya-tiene-mapa">Bluefields ya tiene mapa</a>, Español</li>
     <li>26/03/2015, UNICEF América Latina y el Caribe, <a href="http://www.unicef.org/lac/media_29241.htm">Bluefields ya cuenta con su primer mapa colaborativo</a>, Español</li>
     <li>26/03/2015, MapaNica.net (Blog), <a href="http://blog.mapanica.net/emocion-mapeadora-bluefields/">Emoción Mapeadora en Bluefields</a>, Español</li>
