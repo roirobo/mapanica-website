@@ -36,7 +36,7 @@ Summary: MapaNica, el capítulo de [OpenStreetMap](http://openstreetmap.org/) en
     <li>11/03/2014, Confidencial.com.ni, <a href="http://www.confidencial.com.ni/archivos/articulo/16554/el-quot-mapeo-quot-de-managua-con-un-gps-en-mano">El "mapeo" de Managua con un GPS en mano</a>, Español</li>
     <li>21/02/2014, Tierra Pinolera, <a href="http://www.tierrapinolera.com/managuamapping-nueva-fiesta-de-mapeo-en-managua/">#ManaguaMapping: Nueva fiesta de mapeo en Managua</a>, </li>
     <li>21/02/2014, Metro Nicaragua, <a href="http://issuu.com/metro_nicaragua/docs/20140221_ni_metronicaragua?e=0/32879038">Fiesta de mapeo en Managua</a> (página 9), Español</li>
-    <li>27/07/2013, Metro Nicaragua, <a href="https://twitter.com/osm_ni/status/394500195745951744">Las calles de Managua ya están en Internet</a>, Español</li>
+    <li>27/07/2013, Metro Nicaragua, <a href="http://blog.mapanica.net/las-calles-de-managua-ya-estan-en-internet-periodico-metro/">Las calles de Managua ya están en Internet</a>, Español</li>
     <li>09/10/2013, Felix Delattre (Blog), <a href="http://felix.delattre.de/weblog/2013/10/09/tedxmanagua/">TEDxManagua</a>, English</li>
     <li>12/09/2013, IQ LATINO, <a href="http://iqlatino.org/2013/mapear-nicaragua-un-proyecto-participativo/">"Mapear Nicaragua, un proyecto participativo</a>, Español</li>
     <li>07/09/2013, Confidencial.com.ni, <a href="http://www.confidencial.com.ni/archivos/articulo/13676/los-proyectos-de-tedxmanagua">Los proyectos de TedxManagua</a>, Español</li>
