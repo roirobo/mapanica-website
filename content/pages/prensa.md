@@ -6,6 +6,13 @@ Summary: MapaNica, el capítulo de [OpenStreetMap](http://openstreetmap.org/) en
 
 <div class="article-style-line">
   <ul>
+    <li>02/02/2016, El Nuevo Diario, <a href="http://www.elnuevodiario.com.ni/nacionales/managua/383908-reparten-mapas-recorrido-cada-ruta-managua">Reparten mapas con el recorrido de cada ruta en Managua</a>, Español</li>
+    <li>02/02/2016, Fox News Latino, <a href="http://latino.foxnews.com/latino/espanol/2016/02/02/jovenes-distribuyen-primer-mapa-de-rutas-de-transporte-colectivo-de-managua/">Jóvenes distribuyen primer mapa de rutas de transporte colectivo de Managua</a>, Español</li>
+    <li>02/02/2016, Conficendial.com.ni, <a href="http://confidencial.com.ni/the-true-geographers-take-the-buses/">The true geographers take the bus</a>, English</li>
+    <li>02/02/2016, Conficendial.com.ni, <a href="http://confidencial.com.ni/los-verdaderos-geografos-estan-en-las-rutas/">Los verdaderos geógrafos están en las rutas</a>, Español</li>
+    <li>02/02/2016, Metro Nicaragua, <a href="http://diariometro.com.ni/nacionales/64126-managua-ya-cuenta-con-un-mapa-de-transporte-publico-impreso/">Managua ya cuenta con un mapa de transporte público impreso</a>, Español</li>
+    <li>02/02/2016, Felix Delattre (Blog), <a href="http://felix.delattre.de/weblog/2016/02/02/the-true-geographers-are-in-the-buses">The true geographers are in the buses</a>, English</li>
+    <li>29/01/2016, GIS News, <a href="http://www.gis-news.de/nahverkehrsinformationen-fur-nicaragua/">Nahverkehrsinformationen für Nicaragua</a>, Deutsch</li>
     <li>27/01/2016, Ésta Noche (Canal 2), <a href="https://www.youtube.com/watch?v=SloZBLw2SBI">MapaNica.net: un mapa digital de las rutas de buses de Managua</a> (Video), Español</li>
     <li>27/01/2016, OpenCage Data Blog, <a href="http://blog.opencagedata.com/post/138167564723/country-profile-openstreetmap-in-nicaragua">Country Profile - OpenStreetMap in Nicaragua</a>, English</li>
     <li>19/01/2016, Metro Nicaragua, <a href="http://issuu.com/metro_nicaragua/docs/20160119_ni_metronicaragua?e=0/32879038">Así podés tener tu mapa de las rutas de Managua</a> (página 15), Español</li>
