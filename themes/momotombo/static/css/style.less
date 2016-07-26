@@ -143,35 +143,86 @@ header {
     }
   }
 
-  .search-form {
+  #searchlink {
+    display: block;
     position: absolute;
-    margin: 20px 0 0 15px;
-    float: left;
-    right: 90px;
-    display: none;
+    right: 0;
+    z-index: 2;
 
-    input {
-      margin: 0;
-      border-bottom-left-radius: 4px;
-      border-top-left-radius: 4px;
-      height: 21px;
-      width: 150px;
-      padding: 5px;
-      border: 0;
+    span.fa {
+      padding: 20px 40px;
+      font-size: 2em;
+      cursor: pointer;
     }
+  }
 
-    button {
-      padding: 9px 10px;
-      margin: 0;
-      border-bottom-right-radius: 4px;
-      border-top-right-radius: 4px;
-      border: 0;
+  #searchlink:hover, #searchform.open {
+    color: #bababa;
+  }
 
-      span {
-        padding: 0;
-        margin: 0;
+  .searchlink.open > #searchform {
+    display: block;
+  }
+  /** search field **/
+  #searchform {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    line-height: 40px;
+    top: 70px;
+    left: 0;
+    text-align: left;
+    padding: 0 15px;
+    cursor: default;
+    background: rgba(3, 3, 3, 0.75);
+    z-index: -999;
+
+    form {
+      float: right;
+      padding-top: 8px;
+      padding-right: 40px;
+
+      input {
+        float: left;
+        outline: none;
+
+      }
+      span.button {
+        float: right;
+        .btn {
+          outline: none;
+          display: block;
+          margin-left: -35px;
+          margin-top: 4px;
+          background: none;
+          border: none;
+          color: #bcbcbc;
+          font-size: 16px;
+          cursor: pointer;
+        }
       }
     }
+  }
+
+  #searchform.open {
+    display: block;
+  }
+
+  #search {
+    display: block;
+    position: relative;
+  }
+
+  #search-string {
+    width: 270px;
+    background: #272727;
+    padding: 8px 11px;
+    border: 0;
+    color: #eee;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
   }
 }
 
@@ -563,19 +614,14 @@ ul.social {
 
 #modal {
   position:absolute;
-  background:url(tint20.png) 0 0 repeat;
-  background:rgba(0,0,0,0.2);
-  border-radius:14px;
-  padding:8px;
-  top: 125px;
+  top: 120px;
   left: 0px;
   z-index: 20;
-  max-width: 570px;
+  width: 100% !important;
 
   #modal-content {
-    border-radius:8px;
     background:#fff;
-    padding:20px;
+    padding:15px 20px;
   }
 
   #modal-close {
@@ -585,8 +631,8 @@ ul.social {
     height:27px;
     display:block;
     text-indent:-9999px;
-    top:-7px;
-    right:-7px;
+    bottom:-16px;
+    left:0;
   }
 }
 
@@ -724,6 +770,17 @@ ul.social {
       top: -20px;
       margin-top: 2px;
     }
+
+    #searchlink {
+      span.fa {
+        font-size: 20px;
+        padding-top: 12px;
+      }
+    }
+
+    #searchform {
+      top: 42px;
+    }
   }
   .report-wrapper {
     top: 42px;
@@ -731,7 +788,9 @@ ul.social {
   article {
     padding-top: 42px !important;
   }
-
+  #modal {
+    top: 92px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -763,12 +822,14 @@ ul.social {
 
     }
 
-    .search-form {
-      display: block;
+    #searchform {
+      top: 86px;
     }
   }
 
-
+  #modal {
+    top: 137px;
+  }
 
   aside {
     height: 100%;

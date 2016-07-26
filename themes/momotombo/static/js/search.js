@@ -44,6 +44,16 @@ var modal = (function(){
 
 $(document).ready(function (){
 
+  $('#searchlink').on('click', function(e){
+    if($('#searchform').hasClass('open')) {
+      $('#searchform').removeClass('open');
+      modal.close();
+    }
+    else {
+      $('#searchform').addClass('open');
+    }
+  });
+
   var search = function(){
     var inp = document.getElementById("search-string");
     $.getJSON('http://nominatim.openstreetmap.org/search?format=json&limit=5&q=' + inp.value, function(data) {

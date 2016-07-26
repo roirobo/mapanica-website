@@ -6,6 +6,10 @@ Summary: MapaNica, el capítulo de [OpenStreetMap](http://openstreetmap.org/) en
 
 <div class="article-style-line">
   <ul>
+    <li>20/07/2016, Distintas Latitudes, <a href="http://www.distintaslatitudes.net/la-comunidad-quiere-mapear-nicaragua">MapaNica: La comunidad de Software Libre que quiere mapear Nicaragua</a>, Español</li>
+    <li>03/05/2016, Arquipensa UCA, <a href="https://issuu.com/emmagrunlorio/docs/articulo_de_prensa_oficial-ilovepdf/1">Estudiantes de la UCA mapean Nueva Vida</a>, Español</li>
+    <li>31/03/2016, Radio Universidad - Espiral Nocturno, <a href="http://www.uni.edu.ni/Articulo/Ver/Jovenes-crean-mapa-de-rutas-Managua-y-Ciudad-Sandino">Jóvenes crean mapa de rutas Managua y Ciudad Sandino</a>, Español</li>
+    <li>02/03/2016, Buenos días Nicaragua (Canal 12), <a href="https://www.youtube.com/watch?v=18bBPESlGcU">Mapas de ruta en Managua y Ciudad Sandino</a> (Video), Español</li>
     <li>08/02/2016, Radio Universidad - Espiral Nocturno, <a href="https://soundcloud.com/roirobo/mapanica-net-espiral-nocturno-radio-universidad">Entrevista a Rodrigo Rodríguez</a> (Audio), Español</li>
     <li>06/02/2016, Revista Graph, <a href="http://issuu.com/revistagraph/docs/graph_v018">¡Ya tenemos mapa!</a> (Páginas 12 y 13), Español</li>
     <li>05/02/2016, Huffington Post, <a href="http://www.huffingtonpost.it/francesca-larosa/perche-avere-una-mappa-ti-puo-davvero-cambiare-la-vita_b_9166544.html">Perché avere una mappa ti può davvero cambiare la vita</a>, Italiano</li>
