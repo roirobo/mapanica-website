@@ -28,12 +28,13 @@
 {% endblock %}
 
 {% block content %}
-  {% include "partial/header-with-search.html" %}
+  {% include "partial/header.html" %}
   <main id="map-wrapper">
     <!-- MAP -->
      <div id="map">
      </div>
-
+     
+     {% include "partial/search.html" %}
      {% include "partial/social-links.html" %}
 
   </main>

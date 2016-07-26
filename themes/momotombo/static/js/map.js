@@ -55,7 +55,7 @@ function load_map() {
 
   // Adding layer functionality
   var layers = L.control.activeLayers(baseLayers);
-  layers.setPosition('bottomleft').addTo(map);
+  layers.setPosition('topright').addTo(map);
 
   // Permalink
   //map.addControl(new L.Control.Permalink({text: 'Compartir', layers: layers}));
