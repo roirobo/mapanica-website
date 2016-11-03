@@ -6,7 +6,9 @@ Summary: MapaNica, el capítulo de [OpenStreetMap](http://openstreetmap.org/) en
 
 <div class="article-style-line">
   <ul>
+    <li>27/07/2016, Quartz, <a href="http://www.distintaslatitudes.net/la-comunidad-quiere-mapear-nicaragua">Nicaraguans are using crowdsourcing technology to prove that a good map can change your life</a>, English</li>
     <li>20/07/2016, Distintas Latitudes, <a href="http://www.distintaslatitudes.net/la-comunidad-quiere-mapear-nicaragua">MapaNica: La comunidad de Software Libre que quiere mapear Nicaragua</a>, Español</li>
+    <li>01/04/2016, Univision Noticias, <a href="http://www.univision.com/noticias/citylab-vivienda/el-laberinto-de-managua-la-ciudad-donde-las-calles-no-tienen-nombre">El laberinto de Managua, la ciudad donde las calles no tienen nombre</a>, Español</li>    
     <li>03/05/2016, Arquipensa UCA, <a href="https://issuu.com/emmagrunlorio/docs/articulo_de_prensa_oficial-ilovepdf/1">Estudiantes de la UCA mapean Nueva Vida</a>, Español</li>
     <li>31/03/2016, Radio Universidad - Espiral Nocturno, <a href="http://www.uni.edu.ni/Articulo/Ver/Jovenes-crean-mapa-de-rutas-Managua-y-Ciudad-Sandino">Jóvenes crean mapa de rutas Managua y Ciudad Sandino</a>, Español</li>
     <li>02/03/2016, Buenos días Nicaragua (Canal 12), <a href="https://www.youtube.com/watch?v=18bBPESlGcU">Mapas de ruta en Managua y Ciudad Sandino</a> (Video), Español</li>
