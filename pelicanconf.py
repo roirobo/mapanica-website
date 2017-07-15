@@ -11,7 +11,7 @@ SITEDESCRIPTION = 'El mejor mapa de Nicaragua - libre y colaborativo'
 SITEKEYWORDS = 'CpenStreetMap, Nicaragua, Mapas, Transporte público, Datos Abuertos, Open Data, Software Libre'
 
 USE_LESS = True
-SITEURL = 'http://localhost:8000'
+SITEURL = 'https://www.mapanica.net'
 SITELOGO = '/images/mapanica.png'
 THEME = 'themes/momotombo'
 
@@ -54,7 +54,7 @@ SOCIAL = (('envelope-o', 'mailto:contacto@mapanica.net'),
 MENUITEMS = (('Mapa de Nicaragua', '/index.html', 'map'),
              ('Rutas Managua', 'http://rutas.mapanica.net', 'public-transport'),
              ('Mapas para móviles', '/mapas-moviles.html', 'mobile'),
-             ('Comunidad', '/comunidad.html', 'community'), 
+             ('Comunidad', '/comunidad.html', 'community'),
              ('Descargar datos', 'http://datos.mapanica.net', 'datos'),
             )
 

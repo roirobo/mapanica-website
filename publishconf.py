@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://mapanica.net'
+SITEURL = 'https://www.mapanica.net'
 RELATIVE_URLS = False
 USE_LESS = False
 
