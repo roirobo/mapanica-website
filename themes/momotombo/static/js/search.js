@@ -62,7 +62,7 @@ $(document).ready(function (){
 
   var search = function(){
     var inp = document.getElementById("search-string");
-    $.getJSON('http://nominatim.openstreetmap.org/search?format=json&limit=5&q=' + inp.value, function(data) {
+    $.getJSON('https://nominatim.openstreetmap.org/search?format=json&limit=5&q=' + inp.value, function(data) {
     var items = [];
     $.each(data, function(key, val) {
       bb = val.boundingbox;
@@ -90,7 +90,7 @@ $(document).ready(function (){
 
     // Search callback logic
     var inp = document.getElementById("search-string");
-    $.getJSON('http://nominatim.openstreetmap.org/search?format=json&limit=5&q=' + inp.value + ", Nicaragua", function(data) {
+    $.getJSON('https://nominatim.openstreetmap.org/search?format=json&limit=5&q=' + inp.value + ", Nicaragua", function(data) {
       var items = [];
       $.each(data, function(key, val) {
         bb = val.boundingbox;
