@@ -4,26 +4,26 @@ var feature;
 
 function load_map() {
 
-  var humanitarian = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-    attribution: 'Teselas © <a href="http://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+  var humanitarian = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+    attribution: 'Teselas © <a href="https://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a>; Información geográfica © <a href="https://openstreetmap.org">OpenStreetMap</a>'
   });
-  var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© Colaboradores de <a href="http://openstreetmap.org">OpenStreetMap</a>'
+  var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© Colaboradores de <a href="https://openstreetmap.org">OpenStreetMap</a>'
   });http:
-  var opencyclemap = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
-    attribution: 'Teselas © <a href="http://www.opencyclemap.org/">OpenCycleMap</a>, información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+  var opencyclemap = L.tileLayer('https://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
+    attribution: 'Teselas © <a href="https://www.opencyclemap.org/">OpenCycleMap</a>, información geográfica © <a href="https://openstreetmap.org">OpenStreetMap</a>'
   });
-  var stamen_watercolor = L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
-    attribution: 'Teselas © <a href="http://maps.stamen.com/">Stamen Design</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+  var stamen_watercolor = L.tileLayer('https://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
+    attribution: 'Teselas © <a href="https://maps.stamen.com/">Stamen Design</a>; Información geográfica © <a href="https://openstreetmap.org">OpenStreetMap</a>'
   });
-  var mapbox_hybrid = L.tileLayer('http://{s}.tiles.mapbox.com/v3/jaakkoh.map-f5t6yxb5/{z}/{x}/{y}.png', {
-    attribution: 'Teselas © <a href="http://mapbox.com/">Mapbox</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+  var mapbox_hybrid = L.tileLayer('https://{s}.tiles.mapbox.com/v3/jaakkoh.map-f5t6yxb5/{z}/{x}/{y}.png', {
+    attribution: 'Teselas © <a href="https://mapbox.com/">Mapbox</a>; Información geográfica © <a href="https://openstreetmap.org">OpenStreetMap</a>'
   });
-  var pub_transport = L.tileLayer('http://tile.memomaps.de/tilegen/{z}/{x}/{y}.png', {
-    attribution: 'Teselas © <a href="http://memomaps.de/">MeMoMaps</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+  var pub_transport = L.tileLayer('https://tile.memomaps.de/tilegen/{z}/{x}/{y}.png', {
+    attribution: 'Teselas © <a href="https://memomaps.de/">MeMoMaps</a>; Información geográfica © <a href="https://openstreetmap.org">OpenStreetMap</a>'
   });
-  var mapbox = L.tileLayer('http://{s}.tiles.mapbox.com/v3/jaakkoh.map-4ch3dsvl/{z}/{x}/{y}.png', {
-    attribution: 'Teselas © <a href="http://mapbox.com/">Mapbox</a>; Información geográfica © <a href="http://openstreetmap.org">OpenStreetMap</a>'
+  var mapbox = L.tileLayer('https://{s}.tiles.mapbox.com/v3/jaakkoh.map-4ch3dsvl/{z}/{x}/{y}.png', {
+    attribution: 'Teselas © <a href="https://mapbox.com/">Mapbox</a>; Información geográfica © <a href="https://openstreetmap.org">OpenStreetMap</a>'
   });
 
   var baseLayers = {
